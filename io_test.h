@@ -36,7 +36,7 @@ typedef struct {
 
 void create_data(threadArg *arg);
 double TimeSpecToSeconds(struct timespec* ts);
-void join_and_present_result(pthread_t *threads, threadContext* arg);
+void join_and_present_result(pthread_t *threads, threadContext* arg, FILE* log);
 
 void* work(void* args);
 

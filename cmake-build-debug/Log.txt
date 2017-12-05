@@ -1,0 +1,344 @@
+
+---Writing 20 small files results---
+ time: 0.000007359995 for thread 1
+
+ time: 0.000005172013 for thread 2
+
+ time: 0.000004229005 for thread 3
+
+ time: 0.000004403002 for thread 4
+
+ time: 0.000006265996 for thread 5
+
+ time: 0.000005258000 for thread 6
+
+ time: 0.000004888992 for thread 7
+
+ time: 0.000004161004 for thread 8
+
+ time: 0.000004604008 for thread 9
+
+ time: 0.000016036007 for thread 10
+
+ time: 0.000004882007 for thread 11
+
+ time: 0.000003363006 for thread 12
+
+ time: 0.000019924002 for thread 13
+
+ time: 0.000007139010 for thread 14
+
+ time: 0.000005149006 for thread 15
+
+ time: 0.000003257010 for thread 16
+
+ time: 0.000004282992 for thread 17
+
+ time: 0.000004208996 for thread 18
+
+ time: 0.000002671004 for thread 19
+
+ time: 0.000002443005 for thread 20
+
+Average time 0.000005984903
+
+---Writing 20 large files results---
+ time: 0.001280969009 for thread 1
+
+ time: 0.001282971003 for thread 2
+
+ time: 0.001252098999 for thread 3
+
+ time: 0.001277350006 for thread 4
+
+ time: 0.000808015990 for thread 5
+
+ time: 0.001199929000 for thread 6
+
+ time: 0.000709814005 for thread 7
+
+ time: 0.001246917993 for thread 8
+
+ time: 0.001274621012 for thread 9
+
+ time: 0.000990476998 for thread 10
+
+ time: 0.005042288991 for thread 11
+
+ time: 0.001146405993 for thread 12
+
+ time: 0.000867404000 for thread 13
+
+ time: 0.003351931999 for thread 14
+
+ time: 0.002208424004 for thread 15
+
+ time: 0.001218888006 for thread 16
+
+ time: 0.001217559999 for thread 17
+
+ time: 0.001261414000 for thread 18
+
+ time: 0.001257419994 for thread 19
+
+ time: 0.002751451000 for thread 20
+
+Average time 0.001582317600
+
+---Writing 10 small and 10 large files results---
+ time: 0.001183251006 for thread 1
+
+ time: 0.001214661999 for thread 2
+
+ time: 0.001219540005 for thread 3
+
+ time: 0.001236569005 for thread 4
+
+ time: 0.001004104997 for thread 5
+
+ time: 0.001959999994 for thread 6
+
+ time: 0.000777876005 for thread 7
+
+ time: 0.000716836003 for thread 8
+
+ time: 0.000709696993 for thread 9
+
+ time: 0.001197585996 for thread 10
+
+ time: 0.000009016992 for thread 11
+
+ time: 0.000005872003 for thread 12
+
+ time: 0.000010738993 for thread 13
+
+ time: 0.000014577992 for thread 14
+
+ time: 0.000004059999 for thread 15
+
+ time: 0.000004711008 for thread 16
+
+ time: 0.000005222013 for thread 17
+
+ time: 0.000004935995 for thread 18
+
+ time: 0.000006660004 for thread 19
+
+ time: 0.000014852005 for thread 20
+
+Average time 0.000565038450
+
+---Reading 20 small files results---
+ time: 0.000012714998 for thread 1
+
+ time: 0.000008868999 for thread 2
+
+ time: 0.000008776013 for thread 3
+
+ time: 0.000009088006 for thread 4
+
+ time: 0.000007249997 for thread 5
+
+ time: 0.000009661002 for thread 6
+
+ time: 0.000011060998 for thread 7
+
+ time: 0.000034846002 for thread 8
+
+ time: 0.000016464997 for thread 9
+
+ time: 0.000009315001 for thread 10
+
+ time: 0.000009588999 for thread 11
+
+ time: 0.000010500997 for thread 12
+
+ time: 0.000009184005 for thread 13
+
+ time: 0.000009029012 for thread 14
+
+ time: 0.000008957999 for thread 15
+
+ time: 0.000018532999 for thread 16
+
+ time: 0.000008300005 for thread 17
+
+ time: 0.000009893993 for thread 18
+
+ time: 0.000008616989 for thread 19
+
+ time: 0.000010561009 for thread 20
+
+Average time 0.000011560601
+
+---Reading 20 large files results---
+ time: 0.000629454997 for thread 1
+
+ time: 0.004749467000 for thread 2
+
+ time: 0.001222343999 for thread 3
+
+ time: 0.001026357000 for thread 4
+
+ time: 0.000751938991 for thread 5
+
+ time: 0.001212130999 for thread 6
+
+ time: 0.001189032992 for thread 7
+
+ time: 0.001054915992 for thread 8
+
+ time: 0.001092113991 for thread 9
+
+ time: 0.001004138001 for thread 10
+
+ time: 0.000613244993 for thread 11
+
+ time: 0.002112535993 for thread 12
+
+ time: 0.001386463991 for thread 13
+
+ time: 0.001087202996 for thread 14
+
+ time: 0.000770854007 for thread 15
+
+ time: 0.001043198994 for thread 16
+
+ time: 0.001507045003 for thread 17
+
+ time: 0.001466329006 for thread 18
+
+ time: 0.000987398002 for thread 19
+
+ time: 0.001024971003 for thread 20
+
+Average time 0.001296556897
+
+---Writing 10 large and reading 10 large files results---
+ time: 0.001323008008 for thread 1
+
+ time: 0.001315333997 for thread 2
+
+ time: 0.001103135000 for thread 3
+
+ time: 0.001234654992 for thread 4
+
+ time: 0.001335582987 for thread 5
+
+ time: 0.001213475000 for thread 6
+
+ time: 0.001362345996 for thread 7
+
+ time: 0.001376297005 for thread 8
+
+ time: 0.000807302989 for thread 9
+
+ time: 0.001316320006 for thread 10
+
+ time: 0.001118814005 for thread 11
+
+ time: 0.001248423010 for thread 12
+
+ time: 0.003311423003 for thread 13
+
+ time: 0.001150591997 for thread 14
+
+ time: 0.001864097998 for thread 15
+
+ time: 0.001050923005 for thread 16
+
+ time: 0.001145287999 for thread 17
+
+ time: 0.002701645994 for thread 18
+
+ time: 0.002642381995 for thread 19
+
+ time: 0.001076022003 for thread 20
+
+Average time 0.001484853349
+
+---Writing 10 large and reading 10 small files results---
+ time: 0.001221255996 for thread 1
+
+ time: 0.001354316002 for thread 2
+
+ time: 0.000706209001 for thread 3
+
+ time: 0.000769774997 for thread 4
+
+ time: 0.001114173996 for thread 5
+
+ time: 0.002057054007 for thread 6
+
+ time: 0.001190688010 for thread 7
+
+ time: 0.002286358009 for thread 8
+
+ time: 0.003084362994 for thread 9
+
+ time: 0.001392313003 for thread 10
+
+ time: 0.000010434989 for thread 11
+
+ time: 0.000003845998 for thread 12
+
+ time: 0.000006205999 for thread 13
+
+ time: 0.000008465999 for thread 14
+
+ time: 0.000008577001 for thread 15
+
+ time: 0.000008769988 for thread 16
+
+ time: 0.000004182992 for thread 17
+
+ time: 0.000013069002 for thread 18
+
+ time: 0.000015156998 for thread 19
+
+ time: 0.000009247000 for thread 20
+
+Average time 0.000763223099
+
+---Writing 10 small and reading 10 large files results---
+ time: 0.000008427000 for thread 1
+
+ time: 0.000007189999 for thread 2
+
+ time: 0.000007342998 for thread 3
+
+ time: 0.000005284994 for thread 4
+
+ time: 0.000004494999 for thread 5
+
+ time: 0.000004338988 for thread 6
+
+ time: 0.000005735012 for thread 7
+
+ time: 0.000008963994 for thread 8
+
+ time: 0.000004065994 for thread 9
+
+ time: 0.000006156013 for thread 10
+
+ time: 0.000958924007 for thread 11
+
+ time: 0.000918500999 for thread 12
+
+ time: 0.000625939996 for thread 13
+
+ time: 0.002081364000 for thread 14
+
+ time: 0.001009377011 for thread 15
+
+ time: 0.000827433993 for thread 16
+
+ time: 0.001085862998 for thread 17
+
+ time: 0.000608749004 for thread 18
+
+ time: 0.000932406998 for thread 19
+
+ time: 0.000903339998 for thread 20
+
+Average time 0.000500694950

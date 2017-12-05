@@ -26,6 +26,8 @@ char *file_names[20] = {"thread01",
 int main(int argc, char* argv[]) {
 
     int index;
+    fclose(fopen("Log.txt", "w"));
+    FILE* log = fopen("Log.txt", "a");
 
     //initialize shared threadarguments
     pthread_barrier_t threadBarrier;
@@ -47,8 +49,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Writing 20 small files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Writing 20 small files results---");
+    join_and_present_result(threads, context, log);
 
     //Write 20 large files
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -60,8 +62,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Writing 20 large files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Writing 20 large files results---");
+    join_and_present_result(threads, context, log);
 
     //Write 10 small, 10 large
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -77,8 +79,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Writing 10 small and 10 large files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Writing 10 small and 10 large files results---");
+    join_and_present_result(threads, context, log);
 
     //Read 20 small files
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -90,8 +92,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Reading 20 small files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Reading 20 small files results---");
+    join_and_present_result(threads, context, log);
 
     //Write 20 large files
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -103,8 +105,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Reading 20 large files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Reading 20 large files results---");
+    join_and_present_result(threads, context, log);
 
     //Write 10 large, read 10 large
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -120,8 +122,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Writing 10 large and reading 10 large files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Writing 10 large and reading 10 large files results---");
+    join_and_present_result(threads, context, log);
 
     //Write 10 large, read 10 small
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -137,8 +139,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Writing 10 large and reading 10 small files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Writing 10 large and reading 10 small files results---");
+    join_and_present_result(threads, context, log);
 
     //Write 10 small, read 10 large
     for(index = 0; index < NUMBER_OF_THREADS; index++){
@@ -154,8 +156,8 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    printf("\n---Writing 10 small and reading 10 large files results---");
-    join_and_present_result(threads, context);
+    fprintf(log, "\n---Writing 10 small and reading 10 large files results---");
+    join_and_present_result(threads, context, log);
 
     //free memory
     pthread_barrier_destroy(&threadBarrier);
@@ -164,6 +166,7 @@ int main(int argc, char* argv[]) {
     free(arg->times);
     free(arg);
     free(threads);
+    fclose(log);
 }
 
 void create_data(threadArg *arg) {
@@ -191,7 +194,7 @@ double TimeSpecToSeconds(struct timespec* ts) {
     return (double)ts->tv_sec + (double)ts->tv_nsec / 1000000000.0;
 }
 
-void join_and_present_result(pthread_t *threads, threadContext* arg) {
+void join_and_present_result(pthread_t *threads, threadContext* arg, FILE* log) {
     int index = 0;
     double total_time = 0;
     for(index = 0; (unsigned int)index < NUMBER_OF_THREADS; index++){
@@ -200,10 +203,10 @@ void join_and_present_result(pthread_t *threads, threadContext* arg) {
         }
     }
     for(index = 0; index < NUMBER_OF_THREADS; index++){
-        printf("\n time: %.12lf for thread %d\n",arg->shared->times[index], index+1);
+        fprintf(log ,"\n time: %.12lf for thread %d\n",arg->shared->times[index], index+1);
         total_time += arg->shared->times[index];
     }
-    printf("\nAverage time %.12lf\n", total_time/NUMBER_OF_THREADS);
+    fprintf(log, "\nAverage time %.12lf\n", total_time/NUMBER_OF_THREADS);
 
 }
 

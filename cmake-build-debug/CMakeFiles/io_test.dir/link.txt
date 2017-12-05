@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/io_test.dir/io_test.c.o  -o io_test 

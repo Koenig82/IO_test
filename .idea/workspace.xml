@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bb000434-6c0f-4d20-b0a9-76064cb09d82" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.c" afterPath="$PROJECT_DIR$/io_test.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.h" afterPath="$PROJECT_DIR$/io_test.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +49,8 @@
       <file leaf-file-name="io_test.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/io_test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="158" column="17" lean-forward="false" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
+            <state relative-caret-position="324">
+              <caret line="213" column="33" lean-forward="false" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -148,12 +147,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1512515204319</updated>
-      <workItem from="1512515206156" duration="1085000" />
+      <workItem from="1512515206156" duration="1804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1085000" />
+    <option name="totallyTimeSpent" value="1804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -211,8 +210,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/io_test.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="158" column="17" lean-forward="false" selection-start-line="158" selection-start-column="17" selection-end-line="158" selection-end-column="17" />
+        <state relative-caret-position="324">
+          <caret line="213" column="33" lean-forward="false" selection-start-line="213" selection-start-column="33" selection-end-line="213" selection-end-column="33" />
           <folding />
         </state>
       </provider>

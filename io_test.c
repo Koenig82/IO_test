@@ -196,7 +196,8 @@ double TimeSpecToSeconds(struct timespec* ts) {
 
 void join_and_present_result(pthread_t *threads, threadContext* arg, FILE* log) {
     int index = 0;
-    double total_time = 0;
+    double time = 0;
+    double highest_time = 0;
     for(index = 0; (unsigned int)index < NUMBER_OF_THREADS; index++){
         if(pthread_join(threads[index], NULL)){
             perror("pthread_join :");
@@ -204,9 +205,13 @@ void join_and_present_result(pthread_t *threads, threadContext* arg, FILE* log) 
     }
     for(index = 0; index < NUMBER_OF_THREADS; index++){
         fprintf(log ,"\n time: %.12lf for thread %d\n",arg->shared->times[index], index+1);
-        total_time += arg->shared->times[index];
+        time += arg->shared->times[index];
+        if(arg->shared->times[index] > highest_time){
+            highest_time = arg->shared->times[index];
+        }
     }
-    fprintf(log, "\nAverage time %.12lf\n", total_time/NUMBER_OF_THREADS);
+    fprintf(log, "\nTotal time for all threads: %.12lf\n", time/NUMBER_OF_THREADS);
+    fprintf(log, "\nAverage time: %.12lf\n", time/NUMBER_OF_THREADS);
 
 }
 

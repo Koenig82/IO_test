@@ -70,9 +70,9 @@ int main(int argc, char* argv[]) {
         context[index].shared = arg;
         context[index].id = index;
         if(index < NUMBER_OF_THREADS/2){
-            context[index].operation = WRITE_LARGE;
-        }else{
             context[index].operation = WRITE_SMALL;
+        }else{
+            context[index].operation = WRITE_LARGE;
         }
         if(pthread_create(&threads[index], NULL, work, (void*)&context[index])){
             perror("pthread_create: \n");
@@ -95,7 +95,7 @@ int main(int argc, char* argv[]) {
     fprintf(log, "\n---Reading 20 small files results---");
     join_and_present_result(threads, context, log);
 
-    //Write 20 large files
+    //Read 20 large files
     for(index = 0; index < NUMBER_OF_THREADS; index++){
         context[index].shared = arg;
         context[index].id = index;
@@ -125,14 +125,14 @@ int main(int argc, char* argv[]) {
     fprintf(log, "\n---Writing 10 large and reading 10 large files results---");
     join_and_present_result(threads, context, log);
 
-    //Write 10 large, read 10 small
+    //Read 10 small, write 10 large
     for(index = 0; index < NUMBER_OF_THREADS; index++){
         context[index].shared = arg;
         context[index].id = index;
         if(index < NUMBER_OF_THREADS/2){
-            context[index].operation = WRITE_LARGE;
-        }else{
             context[index].operation = READ_SMALL;
+        }else{
+            context[index].operation = WRITE_LARGE;
         }
         if(pthread_create(&threads[index], NULL, work, (void*)&context[index])){
             perror("pthread_create: \n");

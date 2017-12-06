@@ -210,7 +210,7 @@ void join_and_present_result(pthread_t *threads, threadContext* arg, FILE* log) 
             highest_time = arg->shared->times[index];
         }
     }
-    fprintf(log, "\nTotal time for all threads: %.12lf\n", time/NUMBER_OF_THREADS);
+    fprintf(log, "\nTotal time for all threads: %.12lf\n", highest_time);
     fprintf(log, "\nAverage time: %.12lf\n", time/NUMBER_OF_THREADS);
 
 }

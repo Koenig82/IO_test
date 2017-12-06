@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb000434-6c0f-4d20-b0a9-76064cb09d82" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.c" afterPath="$PROJECT_DIR$/io_test.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.h" afterPath="$PROJECT_DIR$/io_test.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -35,22 +34,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/io_test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="162">
+              <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
               <folding>
-                <element signature="e#191#209#0" expanded="true" />
+                <element signature="e#190#208#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io_test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1482">
+            <state relative-caret-position="3156">
               <caret line="380" column="39" lean-forward="false" selection-start-line="380" selection-start-column="39" selection-end-line="380" selection-end-column="39" />
               <folding />
             </state>
@@ -66,8 +65,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/io_test.h" />
         <option value="$PROJECT_DIR$/io_test.c" />
+        <option value="$PROJECT_DIR$/io_test.h" />
       </list>
     </option>
   </component>
@@ -149,12 +148,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512515204319</updated>
       <workItem from="1512515206156" duration="3505000" />
-      <workItem from="1512589841457" duration="2405000" />
+      <workItem from="1512589841457" duration="2779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5910000" />
+    <option name="totallyTimeSpent" value="6284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1303" height="780" extended-state="6" />
@@ -213,7 +212,7 @@
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#191#209#0" expanded="true" />
+            <element signature="e#190#208#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -234,21 +233,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.h">
+    <entry file="file://$PROJECT_DIR$/io_test.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#191#209#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3156">
+          <caret line="380" column="39" lean-forward="false" selection-start-line="380" selection-start-column="39" selection-end-line="380" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.c">
+    <entry file="file://$PROJECT_DIR$/io_test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1482">
-          <caret line="380" column="39" lean-forward="false" selection-start-line="380" selection-start-column="39" selection-end-line="380" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="162">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#190#208#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

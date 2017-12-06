@@ -159,6 +159,27 @@ int main(int argc, char* argv[]) {
     fprintf(log, "\n---Writing 10 small and reading 10 large files results---");
     join_and_present_result(threads, context, log);
 
+    //Write and read 5 small each, write and read 5 large each
+    for(index = 0; index < NUMBER_OF_THREADS; index++){
+        context[index].shared = arg;
+        context[index].id = index;
+        if(index < NUMBER_OF_THREADS/4){
+            context[index].operation = WRITE_SMALL;
+        }else if(index < NUMBER_OF_THREADS/2){
+            context[index].operation = READ_SMALL;
+        }else if(index >= NUMBER_OF_THREADS/2){
+            context[index].operation = WRITE_LARGE;
+        }else if(index >= (NUMBER_OF_THREADS/4)*3){
+            context[index].operation = READ_LARGE;
+        }
+        if(pthread_create(&threads[index], NULL, work, (void*)&context[index])){
+            perror("pthread_create: \n");
+            exit(EXIT_FAILURE);
+        }
+    }
+    fprintf(log, "\n---Writing 10 small and reading 10 large files results---");
+    join_and_present_result(threads, context, log);
+
     //free memory
     pthread_barrier_destroy(&threadBarrier);
     free(arg->small_data);
@@ -179,11 +200,11 @@ void create_data(threadArg *arg) {
             arg->large_data[i] = (char)(rand()%26+65);
         }
     }
-    if((arg->small_data = malloc(sizeof(char)*100)) == NULL){
+    if((arg->small_data = malloc(sizeof(char)*1000)) == NULL){
         perror("Error allocating memory");
         exit(EXIT_FAILURE);
     }else{
-        for(int i = 0; i < 100; i++){
+        for(int i = 0; i < 1000; i++){
             arg->small_data[i] = (char)(rand()%26+65);
         }
     }
@@ -320,14 +341,14 @@ void read_small(void* args){
     struct timespec start;
     struct timespec end;
 
-    char* read_buffer = malloc(sizeof(char)*101);
+    char* read_buffer = malloc(sizeof(char)*1000);
     pthread_barrier_wait(context->shared->barrier);
     if(clock_gettime(CLOCK_MONOTONIC, &start)) {
         perror("clock_gettime:");
         exit(EXIT_FAILURE);
     }
 
-    fgets (read_buffer, 100, context->shared->fp[context->id]);
+    fgets (read_buffer, 1000, context->shared->fp[context->id]);
 
     if(clock_gettime(CLOCK_MONOTONIC, &end)) {
         perror("clock_gettime:");

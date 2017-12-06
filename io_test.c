@@ -177,7 +177,7 @@ int main(int argc, char* argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    fprintf(log, "\n---Writing 10 small and reading 10 large files results---");
+    fprintf(log, "\n---Write and read 5 small each, write and read 5 large each result---");
     join_and_present_result(threads, context, log);
 
     //free memory

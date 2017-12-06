@@ -6,6 +6,9 @@
 
 #define NUMBER_OF_THREADS 20
 
+#define TEST_SIZE_SMALL 10000
+#define TEST_SIZE_LARGE 100000
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/time.h>

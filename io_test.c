@@ -192,19 +192,19 @@ int main(int argc, char* argv[]) {
 
 void create_data(threadArg *arg) {
 
-    if((arg->large_data = malloc(sizeof(char)*1000000)) == NULL){
+    if((arg->large_data = malloc(sizeof(char)*TEST_SIZE_LARGE)) == NULL){
         perror("Error allocating memory");
         exit(EXIT_FAILURE);
     }else{
-        for(int i = 0; i < 1000000; i++){
+        for(int i = 0; i < TEST_SIZE_LARGE; i++){
             arg->large_data[i] = (char)(rand()%26+65);
         }
     }
-    if((arg->small_data = malloc(sizeof(char)*1000)) == NULL){
+    if((arg->small_data = malloc(sizeof(char)*TEST_SIZE_SMALL)) == NULL){
         perror("Error allocating memory");
         exit(EXIT_FAILURE);
     }else{
-        for(int i = 0; i < 1000; i++){
+        for(int i = 0; i < TEST_SIZE_SMALL; i++){
             arg->small_data[i] = (char)(rand()%26+65);
         }
     }
@@ -341,14 +341,14 @@ void read_small(void* args){
     struct timespec start;
     struct timespec end;
 
-    char* read_buffer = malloc(sizeof(char)*1000);
+    char* read_buffer = malloc(sizeof(char)*TEST_SIZE_SMALL);
     pthread_barrier_wait(context->shared->barrier);
     if(clock_gettime(CLOCK_MONOTONIC, &start)) {
         perror("clock_gettime:");
         exit(EXIT_FAILURE);
     }
 
-    fgets (read_buffer, 1000, context->shared->fp[context->id]);
+    fgets (read_buffer, TEST_SIZE_SMALL, context->shared->fp[context->id]);
 
     if(clock_gettime(CLOCK_MONOTONIC, &end)) {
         perror("clock_gettime:");
@@ -371,14 +371,14 @@ void read_large(void* args){
     struct timespec start;
     struct timespec end;
 
-    char* read_buffer = malloc(sizeof(char)*1000000);
+    char* read_buffer = malloc(sizeof(char)*TEST_SIZE_LARGE);
     pthread_barrier_wait(context->shared->barrier);
     if(clock_gettime(CLOCK_MONOTONIC, &start)) {
         perror("clock_gettime:");
         exit(EXIT_FAILURE);
     }
 
-    fgets (read_buffer, 1000000, context->shared->fp[context->id]);
+    fgets (read_buffer, TEST_SIZE_LARGE, context->shared->fp[context->id]);
 
     if(clock_gettime(CLOCK_MONOTONIC, &end)) {
         perror("clock_gettime:");

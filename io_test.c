@@ -392,7 +392,7 @@ void collect_results(threadArg *arg, FILE *log) {
 
         for(index_thread = 0; index_thread < NUMBER_OF_THREADS; index_thread++){
             /*The line below can add information about individual thread times to the log file*/
-            fprintf(log ,"\n time: %.12lf for thread %d\n",arg->times[index_average_count][index_thread], index_thread+1);
+            fprintf(log ,"\n time: %.12lf for thread %d",arg->times[index_average_count][index_thread], index_thread+1);
             thread_average += arg->times[index_average_count][index_thread];
             if(arg->times[index_average_count][index_thread] > total_execution_time){
                 total_execution_time = arg->times[index_average_count][index_thread];
@@ -403,7 +403,7 @@ void collect_results(threadArg *arg, FILE *log) {
         /*The lines below can add information about the total time for
          * individual executions, and an average workload distribution between
          * that execution's threads.*/
-        fprintf(log, "\nTotal time for all threads in execution %d: %.12lf", index_average_count+1, total_execution_time);
+        fprintf(log, "\nTotal time for all threads in execution %d: %.12lf\n", index_average_count+1, total_execution_time);
         //fprintf(log, "\nAverage thread work time in execution %d: %.12lf\n", index_average_count+1, thread_average/NUMBER_OF_THREADS);
         total_execution_time = 0;
     }

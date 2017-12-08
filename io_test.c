@@ -234,28 +234,35 @@ int main(int argc, char* argv[]) {
     fprintf(log, "\n\n---Writing %d small and reading %d large results---\n", NUMBER_OF_THREADS/2, NUMBER_OF_THREADS/2);
     collect_results(arg, log);
 
-/*
-    //Write, read both large and small
-    for(index = 0; index < NUMBER_OF_THREADS; index++){
-        context[index].shared = arg;
-        context[index].id = index;
-        if(index < NUMBER_OF_THREADS/4){
-            context[index].operation = WRITE_SMALL;
-        }else if(index < NUMBER_OF_THREADS/2){
-            context[index].operation = READ_SMALL;
-        }else if(index >= NUMBER_OF_THREADS/2){
-            context[index].operation = WRITE_LARGE;
-        }else if(index >= (NUMBER_OF_THREADS/4)*3){
-            context[index].operation = READ_LARGE;
+    //Write, read both small and large 'nrofthreads'/4 each
+    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
+        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
+            context[thread_index].shared = arg;
+            *context[thread_index].loop_index = execution_index;
+            *context[thread_index].id = thread_index;
+            if(thread_index < NUMBER_OF_THREADS/4){
+                *context[thread_index].operation = WRITE_SMALL;
+            }else if(thread_index < NUMBER_OF_THREADS/2){
+                *context[thread_index].operation = READ_SMALL;
+            }else if(thread_index >= NUMBER_OF_THREADS/2){
+                *context[thread_index].operation = WRITE_LARGE;
+            }else if(thread_index >= (NUMBER_OF_THREADS/4)*3){
+                *context[thread_index].operation = READ_LARGE;
+            }
+            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
+                perror("pthread_create: \n");
+                exit(EXIT_FAILURE);
+            }
         }
-        if(pthread_create(&threads[index], NULL, work, (void*)&context[index])){
-            perror("pthread_create: \n");
-            exit(EXIT_FAILURE);
+        for(int i = 0; i < NUMBER_OF_THREADS; i++){
+            if(pthread_join(threads[i], NULL)){
+                perror("pthread_join :");
+            }
         }
     }
-    fprintf(log, "\n---Write and read 5 small each, write and read 5 large each result---");
-    join_and_present_result(threads, context, log);
-*/
+    fprintf(log, "\n\n---Writing, reading %d small each and writing, reading %d large each results---\n", NUMBER_OF_THREADS/4, NUMBER_OF_THREADS/4);
+    collect_results(arg, log);
+
     //free memory
     pthread_barrier_destroy(&threadBarrier);
     free(arg->small_data);

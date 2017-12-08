@@ -1,40 +1,126 @@
 
----Writing 1 small files results---
+---Writing 20 small files results---
 
-Total time for all threads in execution 1: 0.000008206000
-Average execution time over 1 executions: 0.000008206000
+Total time for all threads in execution 1: 0.000164555997
+Total time for all threads in execution 2: 0.000005640992
+Total time for all threads in execution 3: 0.000105003011
+Total time for all threads in execution 4: 0.000042592990
+Total time for all threads in execution 5: 0.000319875980
+Total time for all threads in execution 6: 0.000040112005
+Total time for all threads in execution 7: 0.000125210994
+Total time for all threads in execution 8: 0.000006479007
+Total time for all threads in execution 9: 0.000006533024
+Total time for all threads in execution 10: 0.000020093983
+Average execution time over 10 executions: 0.000083609798
 
----Writing 1 large files results---
+---Writing 20 large files results---
 
-Total time for all threads in execution 1: 0.001974957995
-Average execution time over 1 executions: 0.001974957995
+Total time for all threads in execution 1: 0.000676721014
+Total time for all threads in execution 2: 0.000613206998
+Total time for all threads in execution 3: 0.000527599012
+Total time for all threads in execution 4: 0.000229149009
+Total time for all threads in execution 5: 0.001181170985
+Total time for all threads in execution 6: 0.000779038004
+Total time for all threads in execution 7: 0.001121914014
+Total time for all threads in execution 8: 0.000319549988
+Total time for all threads in execution 9: 0.000160867989
+Total time for all threads in execution 10: 0.001770953997
+Average execution time over 10 executions: 0.000738017101
 
----Writing 0 small and 0 large files results---
+---Writing 10 small and 10 large files results---
 
-Total time for all threads in execution 1: 0.000112656999
-Average execution time over 1 executions: 0.000112656999
+Total time for all threads in execution 1: 0.000178573013
+Total time for all threads in execution 2: 0.000184367003
+Total time for all threads in execution 3: 0.000529079989
+Total time for all threads in execution 4: 0.000835140992
+Total time for all threads in execution 5: 0.000263772003
+Total time for all threads in execution 6: 0.001010553009
+Total time for all threads in execution 7: 0.000622043997
+Total time for all threads in execution 8: 0.000354695978
+Total time for all threads in execution 9: 0.000501923991
+Total time for all threads in execution 10: 0.000726696016
+Average execution time over 10 executions: 0.000520684599
 
----Reading 1 small files results---
+---Reading 20 small files results---
 
-Total time for all threads in execution 1: 0.000015988015
-Average execution time over 1 executions: 0.000015988015
+Total time for all threads in execution 1: 0.000054709992
+Total time for all threads in execution 2: 0.000042344996
+Total time for all threads in execution 3: 0.000015197991
+Total time for all threads in execution 4: 0.000016927021
+Total time for all threads in execution 5: 0.000183927012
+Total time for all threads in execution 6: 0.000023867004
+Total time for all threads in execution 7: 0.000017732003
+Total time for all threads in execution 8: 0.000025893009
+Total time for all threads in execution 9: 0.000014568999
+Total time for all threads in execution 10: 0.000015549012
+Average execution time over 10 executions: 0.000041071704
 
----Reading 1 large files results---
+---Reading 20 large files results---
 
-Total time for all threads in execution 1: 0.000079903024
-Average execution time over 1 executions: 0.000079903024
+Total time for all threads in execution 1: 0.000287156989
+Total time for all threads in execution 2: 0.000150679989
+Total time for all threads in execution 3: 0.000340119004
+Total time for all threads in execution 4: 0.000148417021
+Total time for all threads in execution 5: 0.000630315975
+Total time for all threads in execution 6: 0.000156795024
+Total time for all threads in execution 7: 0.000139701006
+Total time for all threads in execution 8: 0.000143682002
+Total time for all threads in execution 9: 0.000191686995
+Total time for all threads in execution 10: 0.000148416992
+Average execution time over 10 executions: 0.000233697100
 
----Writing and reading 0 large each results---
+---Writing and reading 10 large each results---
 
-Total time for all threads in execution 1: 0.000040319021
-Average execution time over 1 executions: 0.000040319021
+Total time for all threads in execution 1: 0.000582902983
+Total time for all threads in execution 2: 0.000352812000
+Total time for all threads in execution 3: 0.000714210997
+Total time for all threads in execution 4: 0.000450024992
+Total time for all threads in execution 5: 0.000379425997
+Total time for all threads in execution 6: 0.000759503018
+Total time for all threads in execution 7: 0.000180636998
+Total time for all threads in execution 8: 0.000824357005
+Total time for all threads in execution 9: 0.000609998999
+Total time for all threads in execution 10: 0.000867883005
+Average execution time over 10 executions: 0.000572175600
 
----Reading 0 small and writing 0 large results---
+---Reading 10 small and writing 10 large results---
 
-Total time for all threads in execution 1: 0.000096912991
-Average execution time over 1 executions: 0.000096912991
+Total time for all threads in execution 1: 0.001037141017
+Total time for all threads in execution 2: 0.001209687005
+Total time for all threads in execution 3: 0.000707822997
+Total time for all threads in execution 4: 0.000182610005
+Total time for all threads in execution 5: 0.000398926000
+Total time for all threads in execution 6: 0.000392485003
+Total time for all threads in execution 7: 0.002441272023
+Total time for all threads in execution 8: 0.000461112009
+Total time for all threads in execution 9: 0.000654571020
+Total time for all threads in execution 10: 0.001183991000
+Average execution time over 10 executions: 0.000866961808
 
----Writing 0 small and reading 0 large results---
+---Writing 10 small and reading 10 large results---
 
-Total time for all threads in execution 1: 0.000039989012
-Average execution time over 1 executions: 0.000039989012
+Total time for all threads in execution 1: 0.000104770996
+Total time for all threads in execution 2: 0.000755917019
+Total time for all threads in execution 3: 0.000185698998
+Total time for all threads in execution 4: 0.000171616004
+Total time for all threads in execution 5: 0.000124112994
+Total time for all threads in execution 6: 0.000532767997
+Total time for all threads in execution 7: 0.000213542982
+Total time for all threads in execution 8: 0.000091200985
+Total time for all threads in execution 9: 0.000776950998
+Total time for all threads in execution 10: 0.000115344010
+Average execution time over 10 executions: 0.000307192298
+
+---Writing, reading 5 small each and writing, reading 5 large each results---
+
+Total time for all threads in execution 1: 0.000166562997
+Total time for all threads in execution 2: 0.000346756016
+Total time for all threads in execution 3: 0.000180150004
+Total time for all threads in execution 4: 0.000650256989
+Total time for all threads in execution 5: 0.000208896992
+Total time for all threads in execution 6: 0.000148927007
+Total time for all threads in execution 7: 0.000152680004
+Total time for all threads in execution 8: 0.000206285011
+Total time for all threads in execution 9: 0.000125237013
+Total time for all threads in execution 10: 0.001203800988
+Average execution time over 10 executions: 0.000338955302

@@ -12,31 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb000434-6c0f-4d20-b0a9-76064cb09d82" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/read_write_time.dir/io_test.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/read_write_time.dir/io_test.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/read_write_time" afterPath="$PROJECT_DIR$/cmake-build-debug/read_write_time" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/Log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread01Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread01Large.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread01Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread01Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread02Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread02Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread03Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread03Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread04Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread04Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread05Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread05Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread06Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread06Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread07Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread07Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread08Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread08Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread09Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread09Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread10Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread10Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread11Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread11Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread12Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread12Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread13Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread13Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread14Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread14Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread15Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread15Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread16Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread16Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread17Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread17Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread18Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread18Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread19Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread19Small.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread20Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread20Small.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.c" afterPath="$PROJECT_DIR$/io_test.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.h" afterPath="$PROJECT_DIR$/io_test.h" />
     </list>
@@ -60,23 +35,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/io_test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              <folding>
-                <element signature="e#213#231#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="54">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io_test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="491" column="44" lean-forward="false" selection-start-line="491" selection-start-column="44" selection-end-line="491" selection-end-column="44" />
+            <state relative-caret-position="414">
+              <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,8 +64,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/io_test.h" />
         <option value="$PROJECT_DIR$/io_test.c" />
+        <option value="$PROJECT_DIR$/io_test.h" />
       </list>
     </option>
   </component>
@@ -175,12 +148,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512515204319</updated>
       <workItem from="1512515206156" duration="3505000" />
-      <workItem from="1512589841457" duration="39973000" />
+      <workItem from="1512589841457" duration="40324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43478000" />
+    <option name="totallyTimeSpent" value="43829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1303" height="780" extended-state="6" />
@@ -235,9 +208,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <element signature="e#213#231#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -257,20 +228,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.h">
+    <entry file="file://$PROJECT_DIR$/io_test.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          <folding>
-            <element signature="e#213#231#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="414">
+          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.c">
+    <entry file="file://$PROJECT_DIR$/io_test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="491" column="44" lean-forward="false" selection-start-line="491" selection-start-column="44" selection-end-line="491" selection-end-column="44" />
+        <state relative-caret-position="54">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding />
         </state>
       </provider>

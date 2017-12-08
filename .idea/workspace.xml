@@ -35,21 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io_test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="177">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+              <folding>
+                <element signature="e#215#233#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/io_test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
+            <state relative-caret-position="66">
+              <caret line="388" column="23" lean-forward="false" selection-start-line="388" selection-start-column="23" selection-end-line="388" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -64,8 +66,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/io_test.c" />
         <option value="$PROJECT_DIR$/io_test.h" />
+        <option value="$PROJECT_DIR$/io_test.c" />
       </list>
     </option>
   </component>
@@ -129,7 +131,7 @@
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <configuration name="read_write_time" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="read_write_time" TARGET_NAME="read_write_time" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="read_write_time" RUN_TARGET_NAME="read_write_time">
+    <configuration name="read_write_time" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="7" PASS_PARENT_ENVS_2="true" PROJECT_NAME="read_write_time" TARGET_NAME="read_write_time" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="read_write_time" RUN_TARGET_NAME="read_write_time">
       <envs />
     </configuration>
     <list size="2">
@@ -148,12 +150,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512515204319</updated>
       <workItem from="1512515206156" duration="3505000" />
-      <workItem from="1512589841457" duration="40324000" />
+      <workItem from="1512589841457" duration="44673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43829000" />
+    <option name="totallyTimeSpent" value="48178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1303" height="780" extended-state="6" />
@@ -208,7 +210,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#215#233#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -228,18 +232,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.c">
+    <entry file="file://$PROJECT_DIR$/io_test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="281" column="0" lean-forward="false" selection-start-line="281" selection-start-column="0" selection-end-line="281" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="177">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding>
+            <element signature="e#215#233#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.h">
+    <entry file="file://$PROJECT_DIR$/io_test.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="66">
+          <caret line="388" column="23" lean-forward="false" selection-start-line="388" selection-start-column="23" selection-end-line="388" selection-end-column="23" />
           <folding />
         </state>
       </provider>

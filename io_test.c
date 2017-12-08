@@ -25,6 +25,16 @@ char *file_names[20] = {"thread01",
 
 int main(int argc, char* argv[]) {
 
+    char* ptr;
+    long argument = strtol(argv[1], &ptr, 10);
+    if(argc != 2){
+        print_usage();
+        exit(EXIT_FAILURE);
+    }else if(argument < 1 || argument > 7){
+        print_usage();
+        exit(EXIT_FAILURE);
+    }
+
     int thread_index;
     int execution_index;
     fclose(fopen("Log.txt", "w"));
@@ -92,177 +102,221 @@ int main(int argc, char* argv[]) {
     fprintf(log, "\n\n---Writing %d large files results---\n", NUMBER_OF_THREADS);
     collect_results(arg, log);
 
-    //Write 'nrofthreads'/2 small and 'nrofthreads'/2 large files
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            if(thread_index < NUMBER_OF_THREADS/2){
-                *context[thread_index].operation = WRITE_SMALL;
-            }else{
-                *context[thread_index].operation = WRITE_LARGE;
-            }
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
-            }
-        }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
-            }
-        }
-    }
-    fprintf(log, "\n\n---Writing %d small and %d large files results---\n", NUMBER_OF_THREADS/2, NUMBER_OF_THREADS/2);
-    collect_results(arg, log);
+    switch(argument) {
 
-    //Read 'nrofthreads' small files
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            *context[thread_index].operation = READ_SMALL;
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
-            }
-        }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
-            }
-        }
-    }
-    fprintf(log, "\n\n---Reading %d small files results---\n", NUMBER_OF_THREADS);
-    collect_results(arg, log);
-
-    //Read 'nrofthreads' large files
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            *context[thread_index].operation = READ_LARGE;
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
-            }
-        }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
-            }
-        }
-    }
-    fprintf(log, "\n\n---Reading %d large files results---\n", NUMBER_OF_THREADS);
-    collect_results(arg, log);
-
-    //Write and read large files 'nrofthreads'/2 each
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            if(thread_index < NUMBER_OF_THREADS/2){
-                *context[thread_index].operation = WRITE_LARGE;
-            }else{
-                *context[thread_index].operation = READ_LARGE;
-            }
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
-            }
-        }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
-            }
-        }
-    }
-    fprintf(log, "\n\n---Writing and reading %d large each results---\n", NUMBER_OF_THREADS/2);
-    collect_results(arg, log);
-
-    //Read small and write large 'nrofthreads'/2 each
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            if(thread_index < NUMBER_OF_THREADS/2){
+        case 1 :
+        //Read 'nrofthreads' small files
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
                 *context[thread_index].operation = READ_SMALL;
-            }else{
-                *context[thread_index].operation = WRITE_LARGE;
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
             }
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
             }
         }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
-            }
-        }
-    }
-    fprintf(log, "\n\n---Reading %d small and writing %d large results---\n", NUMBER_OF_THREADS/2, NUMBER_OF_THREADS/2);
-    collect_results(arg, log);
+        fprintf(log, "\n\n---Reading %d small files results---\n",
+                NUMBER_OF_THREADS);
+        collect_results(arg, log);
+        break;
+        case 2:
 
-    //Write small and read large 'nrofthreads'/2 each
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            if(thread_index < NUMBER_OF_THREADS/2){
-                *context[thread_index].operation = WRITE_SMALL;
-            }else{
+        //Read 'nrofthreads' large files
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
                 *context[thread_index].operation = READ_LARGE;
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
             }
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
             }
         }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
+        fprintf(log, "\n\n---Reading %d large files results---\n",
+                NUMBER_OF_THREADS);
+        collect_results(arg, log);
+        break;
+        case 3 :
+        //Write 'nrofthreads'/2 small and 'nrofthreads'/2 large files
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
+                if (thread_index < NUMBER_OF_THREADS / 2) {
+                    *context[thread_index].operation = WRITE_SMALL;
+                } else {
+                    *context[thread_index].operation = WRITE_LARGE;
+                }
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
+            }
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
             }
         }
+        fprintf(log, "\n\n---Writing %d small and %d large files results---\n",
+                NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
+        collect_results(arg, log);
+        break;
+        case 4:
+        //Write and read large files 'nrofthreads'/2 each
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
+                if (thread_index < NUMBER_OF_THREADS / 2) {
+                    *context[thread_index].operation = WRITE_LARGE;
+                } else {
+                    *context[thread_index].operation = READ_LARGE;
+                }
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
+            }
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
+            }
+        }
+        fprintf(log, "\n\n---Writing and reading %d large each results---\n",
+                NUMBER_OF_THREADS / 2);
+        collect_results(arg, log);
+        break;
+        case 5 :
+        //Read small and write large 'nrofthreads'/2 each
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
+                if (thread_index < NUMBER_OF_THREADS / 2) {
+                    *context[thread_index].operation = READ_SMALL;
+                } else {
+                    *context[thread_index].operation = WRITE_LARGE;
+                }
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
+            }
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
+            }
+        }
+        fprintf(log,
+                "\n\n---Reading %d small and writing %d large results---\n",
+                NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
+        collect_results(arg, log);
+        break;
+        case 6 :
+        //Write small and read large 'nrofthreads'/2 each
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
+                if (thread_index < NUMBER_OF_THREADS / 2) {
+                    *context[thread_index].operation = WRITE_SMALL;
+                } else {
+                    *context[thread_index].operation = READ_LARGE;
+                }
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
+            }
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
+            }
+        }
+        fprintf(log,
+                "\n\n---Writing %d small and reading %d large results---\n",
+                NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
+        collect_results(arg, log);
+        break;
+        case 7 :
+        //Write, read both small and large 'nrofthreads'/4 each
+        for (execution_index = 0;
+             execution_index < AVERAGE_COUNT; execution_index++) {
+            for (thread_index = 0;
+                 thread_index < NUMBER_OF_THREADS; thread_index++) {
+                context[thread_index].shared = arg;
+                *context[thread_index].loop_index = execution_index;
+                *context[thread_index].id = thread_index;
+                if (thread_index < NUMBER_OF_THREADS / 4) {
+                    *context[thread_index].operation = WRITE_SMALL;
+                } else if (thread_index < NUMBER_OF_THREADS / 2) {
+                    *context[thread_index].operation = READ_SMALL;
+                } else if (thread_index >= NUMBER_OF_THREADS / 2) {
+                    *context[thread_index].operation = WRITE_LARGE;
+                } else if (thread_index >= (NUMBER_OF_THREADS / 4) * 3) {
+                    *context[thread_index].operation = READ_LARGE;
+                }
+                if (pthread_create(&threads[thread_index], NULL, work,
+                                   (void *) &context[thread_index])) {
+                    perror("pthread_create: \n");
+                    exit(EXIT_FAILURE);
+                }
+            }
+            for (int i = 0; i < NUMBER_OF_THREADS; i++) {
+                if (pthread_join(threads[i], NULL)) {
+                    perror("pthread_join :");
+                }
+            }
+        }
+        fprintf(log,
+                "\n\n---Writing, reading %d small each and writing, reading %d large each results---\n",
+                NUMBER_OF_THREADS / 4, NUMBER_OF_THREADS / 4);
+        collect_results(arg, log);
+            break;
+        default :
+            break;
     }
-    fprintf(log, "\n\n---Writing %d small and reading %d large results---\n", NUMBER_OF_THREADS/2, NUMBER_OF_THREADS/2);
-    collect_results(arg, log);
-
-    //Write, read both small and large 'nrofthreads'/4 each
-    for(execution_index = 0; execution_index < AVERAGE_COUNT; execution_index++){
-        for(thread_index = 0; thread_index < NUMBER_OF_THREADS; thread_index++){
-            context[thread_index].shared = arg;
-            *context[thread_index].loop_index = execution_index;
-            *context[thread_index].id = thread_index;
-            if(thread_index < NUMBER_OF_THREADS/4){
-                *context[thread_index].operation = WRITE_SMALL;
-            }else if(thread_index < NUMBER_OF_THREADS/2){
-                *context[thread_index].operation = READ_SMALL;
-            }else if(thread_index >= NUMBER_OF_THREADS/2){
-                *context[thread_index].operation = WRITE_LARGE;
-            }else if(thread_index >= (NUMBER_OF_THREADS/4)*3){
-                *context[thread_index].operation = READ_LARGE;
-            }
-            if(pthread_create(&threads[thread_index], NULL, work, (void*)&context[thread_index])){
-                perror("pthread_create: \n");
-                exit(EXIT_FAILURE);
-            }
-        }
-        for(int i = 0; i < NUMBER_OF_THREADS; i++){
-            if(pthread_join(threads[i], NULL)){
-                perror("pthread_join :");
-            }
-        }
-    }
-    fprintf(log, "\n\n---Writing, reading %d small each and writing, reading %d large each results---\n", NUMBER_OF_THREADS/4, NUMBER_OF_THREADS/4);
-    collect_results(arg, log);
-
     //free memory
     pthread_barrier_destroy(&threadBarrier);
     free(arg->small_data);
@@ -278,6 +332,19 @@ int main(int argc, char* argv[]) {
     free(arg);
     free(threads);
     fclose(log);
+}
+void print_usage(void){
+    printf("\nprogram [int]\n");
+    printf("\nThe program will always start by writing all small files");
+    printf("\nand then all large files. The third test is is chosen with");
+    printf("\nthe argument.");
+    printf("\n1 = Read all small files");
+    printf("\n2 = Read all large files");
+    printf("\n3 = Write small and large files");
+    printf("\n4 = Write and read large files");
+    printf("\n5 = Read small and write large files");
+    printf("\n6 = Write small and read large files");
+    printf("\n7 = Write small, read small, write large, read large");
 }
 
 void create_data(threadArg *arg) {
@@ -325,7 +392,7 @@ void collect_results(threadArg *arg, FILE *log) {
 
         for(index_thread = 0; index_thread < NUMBER_OF_THREADS; index_thread++){
             /*The line below can add information about individual thread times to the log file*/
-            //fprintf(log ,"\n time: %.12lf for thread %d\n",arg->times[index_average_count][index_thread], index_thread+1);
+            fprintf(log ,"\n time: %.12lf for thread %d\n",arg->times[index_average_count][index_thread], index_thread+1);
             thread_average += arg->times[index_average_count][index_thread];
             if(arg->times[index_average_count][index_thread] > total_execution_time){
                 total_execution_time = arg->times[index_average_count][index_thread];

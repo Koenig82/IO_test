@@ -1,126 +1,1242 @@
 
 ---Writing 20 small files results---
 
-Total time for all threads in execution 1: 0.000164555997
-Total time for all threads in execution 2: 0.000005640992
-Total time for all threads in execution 3: 0.000105003011
-Total time for all threads in execution 4: 0.000042592990
-Total time for all threads in execution 5: 0.000319875980
-Total time for all threads in execution 6: 0.000040112005
-Total time for all threads in execution 7: 0.000125210994
-Total time for all threads in execution 8: 0.000006479007
-Total time for all threads in execution 9: 0.000006533024
-Total time for all threads in execution 10: 0.000020093983
-Average execution time over 10 executions: 0.000083609798
+ time: 0.000010582997 for thread 1
+
+ time: 0.000006246992 for thread 2
+
+ time: 0.000006485003 for thread 3
+
+ time: 0.000005257985 for thread 4
+
+ time: 0.000006609014 for thread 5
+
+ time: 0.000008158007 for thread 6
+
+ time: 0.000005242997 for thread 7
+
+ time: 0.000004786009 for thread 8
+
+ time: 0.000005509006 for thread 9
+
+ time: 0.000005620997 for thread 10
+
+ time: 0.000004957983 for thread 11
+
+ time: 0.000006266026 for thread 12
+
+ time: 0.000005125010 for thread 13
+
+ time: 0.000005365000 for thread 14
+
+ time: 0.000005338981 for thread 15
+
+ time: 0.000006609014 for thread 16
+
+ time: 0.000004795002 for thread 17
+
+ time: 0.000004098023 for thread 18
+
+ time: 0.000008195988 for thread 19
+
+ time: 0.000005660986 for thread 20
+
+Total time for all threads in execution 1: 0.000010582997
+ time: 0.000003516994 for thread 1
+
+ time: 0.000002629997 for thread 2
+
+ time: 0.000003281981 for thread 3
+
+ time: 0.000002818997 for thread 4
+
+ time: 0.000003263995 for thread 5
+
+ time: 0.000002858025 for thread 6
+
+ time: 0.000003077002 for thread 7
+
+ time: 0.000002989022 for thread 8
+
+ time: 0.000002679997 for thread 9
+
+ time: 0.000003026013 for thread 10
+
+ time: 0.000002823013 for thread 11
+
+ time: 0.000003741006 for thread 12
+
+ time: 0.000003558991 for thread 13
+
+ time: 0.000002493005 for thread 14
+
+ time: 0.000002807996 for thread 15
+
+ time: 0.000006249000 for thread 16
+
+ time: 0.000002659013 for thread 17
+
+ time: 0.000002902991 for thread 18
+
+ time: 0.000002736982 for thread 19
+
+ time: 0.000003360008 for thread 20
+
+Total time for all threads in execution 2: 0.000006249000
+ time: 0.000012656004 for thread 1
+
+ time: 0.000006194983 for thread 2
+
+ time: 0.000003453024 for thread 3
+
+ time: 0.000003733992 for thread 4
+
+ time: 0.000002918998 for thread 5
+
+ time: 0.000003360998 for thread 6
+
+ time: 0.000003085996 for thread 7
+
+ time: 0.000007582013 for thread 8
+
+ time: 0.000002559973 for thread 9
+
+ time: 0.000003035006 for thread 10
+
+ time: 0.000333410979 for thread 11
+
+ time: 0.000003141002 for thread 12
+
+ time: 0.000021518004 for thread 13
+
+ time: 0.000002754008 for thread 14
+
+ time: 0.000003502006 for thread 15
+
+ time: 0.000007421011 for thread 16
+
+ time: 0.000002820016 for thread 17
+
+ time: 0.000011247001 for thread 18
+
+ time: 0.000025997986 for thread 19
+
+ time: 0.000003827008 for thread 20
+
+Total time for all threads in execution 3: 0.000333410979
+ time: 0.000002793997 for thread 1
+
+ time: 0.000002724002 for thread 2
+
+ time: 0.000007569004 for thread 3
+
+ time: 0.000003459019 for thread 4
+
+ time: 0.000002807996 for thread 5
+
+ time: 0.000002702000 for thread 6
+
+ time: 0.000003026013 for thread 7
+
+ time: 0.000002551009 for thread 8
+
+ time: 0.000002563989 for thread 9
+
+ time: 0.000002451008 for thread 10
+
+ time: 0.000002707995 for thread 11
+
+ time: 0.000002823013 for thread 12
+
+ time: 0.000003038003 for thread 13
+
+ time: 0.000003111985 for thread 14
+
+ time: 0.000003049994 for thread 15
+
+ time: 0.000004254020 for thread 16
+
+ time: 0.000002446002 for thread 17
+
+ time: 0.000002395012 for thread 18
+
+ time: 0.000003416993 for thread 19
+
+ time: 0.000002400018 for thread 20
+
+Total time for all threads in execution 4: 0.000007569004
+ time: 0.000004756002 for thread 1
+
+ time: 0.000003781024 for thread 2
+
+ time: 0.000002874003 for thread 3
+
+ time: 0.000002857007 for thread 4
+
+ time: 0.000002940011 for thread 5
+
+ time: 0.000003647001 for thread 6
+
+ time: 0.000002624001 for thread 7
+
+ time: 0.000006372982 for thread 8
+
+ time: 0.000003332010 for thread 9
+
+ time: 0.000002841989 for thread 10
+
+ time: 0.000003046007 for thread 11
+
+ time: 0.000002607994 for thread 12
+
+ time: 0.000002893998 for thread 13
+
+ time: 0.000002638000 for thread 14
+
+ time: 0.000002704997 for thread 15
+
+ time: 0.000004764006 for thread 16
+
+ time: 0.000003013993 for thread 17
+
+ time: 0.000003205991 for thread 18
+
+ time: 0.000002971996 for thread 19
+
+ time: 0.000002618006 for thread 20
+
+Total time for all threads in execution 5: 0.000006372982
+ time: 0.000102009013 for thread 1
+
+ time: 0.000002432993 for thread 2
+
+ time: 0.000007016002 for thread 3
+
+ time: 0.000002260989 for thread 4
+
+ time: 0.000003455003 for thread 5
+
+ time: 0.000002574001 for thread 6
+
+ time: 0.000002379005 for thread 7
+
+ time: 0.000003027992 for thread 8
+
+ time: 0.000002599991 for thread 9
+
+ time: 0.000002475019 for thread 10
+
+ time: 0.000002961984 for thread 11
+
+ time: 0.000002461020 for thread 12
+
+ time: 0.000002539979 for thread 13
+
+ time: 0.000003084016 for thread 14
+
+ time: 0.000003944006 for thread 15
+
+ time: 0.000001937005 for thread 16
+
+ time: 0.000002378976 for thread 17
+
+ time: 0.000002824992 for thread 18
+
+ time: 0.000001918001 for thread 19
+
+ time: 0.000001571985 for thread 20
+
+Total time for all threads in execution 6: 0.000102009013
+ time: 0.000003005000 for thread 1
+
+ time: 0.000002452987 for thread 2
+
+ time: 0.000005615002 for thread 3
+
+ time: 0.000001927023 for thread 4
+
+ time: 0.000002614019 for thread 5
+
+ time: 0.000002827990 for thread 6
+
+ time: 0.000001531997 for thread 7
+
+ time: 0.000001637003 for thread 8
+
+ time: 0.000003721012 for thread 9
+
+ time: 0.000002345012 for thread 10
+
+ time: 0.000002705987 for thread 11
+
+ time: 0.000002740999 for thread 12
+
+ time: 0.000002146000 for thread 13
+
+ time: 0.000002810993 for thread 14
+
+ time: 0.000002457004 for thread 15
+
+ time: 0.000002307002 for thread 16
+
+ time: 0.000002305023 for thread 17
+
+ time: 0.000001546025 for thread 18
+
+ time: 0.000003480003 for thread 19
+
+ time: 0.000002795015 for thread 20
+
+Total time for all threads in execution 7: 0.000005615002
+ time: 0.000003082008 for thread 1
+
+ time: 0.000004824018 for thread 2
+
+ time: 0.000002488989 for thread 3
+
+ time: 0.000002173998 for thread 4
+
+ time: 0.000001796987 for thread 5
+
+ time: 0.000002825982 for thread 6
+
+ time: 0.000002461020 for thread 7
+
+ time: 0.000003202993 for thread 8
+
+ time: 0.000008077011 for thread 9
+
+ time: 0.000002237997 for thread 10
+
+ time: 0.000002823013 for thread 11
+
+ time: 0.000002712011 for thread 12
+
+ time: 0.000002594024 for thread 13
+
+ time: 0.000003079011 for thread 14
+
+ time: 0.000002485001 for thread 15
+
+ time: 0.000002516987 for thread 16
+
+ time: 0.000002922985 for thread 17
+
+ time: 0.000002473011 for thread 18
+
+ time: 0.000002996007 for thread 19
+
+ time: 0.000003911991 for thread 20
+
+Total time for all threads in execution 8: 0.000008077011
+ time: 0.000005165988 for thread 1
+
+ time: 0.000008667004 for thread 2
+
+ time: 0.000002971996 for thread 3
+
+ time: 0.000003409019 for thread 4
+
+ time: 0.000006351998 for thread 5
+
+ time: 0.000003360008 for thread 6
+
+ time: 0.000002399000 for thread 7
+
+ time: 0.000003667985 for thread 8
+
+ time: 0.000005857000 for thread 9
+
+ time: 0.000003936002 for thread 10
+
+ time: 0.000003869005 for thread 11
+
+ time: 0.000004087982 for thread 12
+
+ time: 0.000002789020 for thread 13
+
+ time: 0.000002349989 for thread 14
+
+ time: 0.000004308997 for thread 15
+
+ time: 0.000004142988 for thread 16
+
+ time: 0.000003127003 for thread 17
+
+ time: 0.000003472000 for thread 18
+
+ time: 0.000003508001 for thread 19
+
+ time: 0.000003505003 for thread 20
+
+Total time for all threads in execution 9: 0.000008667004
+ time: 0.000002704997 for thread 1
+
+ time: 0.000003096997 for thread 2
+
+ time: 0.000002588989 for thread 3
+
+ time: 0.000002846005 for thread 4
+
+ time: 0.000002802990 for thread 5
+
+ time: 0.000003009016 for thread 6
+
+ time: 0.000002788001 for thread 7
+
+ time: 0.000002577988 for thread 8
+
+ time: 0.000002735993 for thread 9
+
+ time: 0.000002713001 for thread 10
+
+ time: 0.000002382003 for thread 11
+
+ time: 0.000002807006 for thread 12
+
+ time: 0.000002485001 for thread 13
+
+ time: 0.000002963003 for thread 14
+
+ time: 0.000002810004 for thread 15
+
+ time: 0.000002888002 for thread 16
+
+ time: 0.000002362998 for thread 17
+
+ time: 0.000006670976 for thread 18
+
+ time: 0.000002757995 for thread 19
+
+ time: 0.000002387998 for thread 20
+
+Total time for all threads in execution 10: 0.000006670976
+Average execution time over 10 executions: 0.000049522397
 
 ---Writing 20 large files results---
 
-Total time for all threads in execution 1: 0.000676721014
-Total time for all threads in execution 2: 0.000613206998
-Total time for all threads in execution 3: 0.000527599012
-Total time for all threads in execution 4: 0.000229149009
-Total time for all threads in execution 5: 0.001181170985
-Total time for all threads in execution 6: 0.000779038004
-Total time for all threads in execution 7: 0.001121914014
-Total time for all threads in execution 8: 0.000319549988
-Total time for all threads in execution 9: 0.000160867989
-Total time for all threads in execution 10: 0.001770953997
-Average execution time over 10 executions: 0.000738017101
+ time: 0.000122780999 for thread 1
 
----Writing 10 small and 10 large files results---
+ time: 0.000142348988 for thread 2
 
-Total time for all threads in execution 1: 0.000178573013
-Total time for all threads in execution 2: 0.000184367003
-Total time for all threads in execution 3: 0.000529079989
-Total time for all threads in execution 4: 0.000835140992
-Total time for all threads in execution 5: 0.000263772003
-Total time for all threads in execution 6: 0.001010553009
-Total time for all threads in execution 7: 0.000622043997
-Total time for all threads in execution 8: 0.000354695978
-Total time for all threads in execution 9: 0.000501923991
-Total time for all threads in execution 10: 0.000726696016
-Average execution time over 10 executions: 0.000520684599
+ time: 0.000107019005 for thread 3
 
----Reading 20 small files results---
+ time: 0.000189612998 for thread 4
 
-Total time for all threads in execution 1: 0.000054709992
-Total time for all threads in execution 2: 0.000042344996
-Total time for all threads in execution 3: 0.000015197991
-Total time for all threads in execution 4: 0.000016927021
-Total time for all threads in execution 5: 0.000183927012
-Total time for all threads in execution 6: 0.000023867004
-Total time for all threads in execution 7: 0.000017732003
-Total time for all threads in execution 8: 0.000025893009
-Total time for all threads in execution 9: 0.000014568999
-Total time for all threads in execution 10: 0.000015549012
-Average execution time over 10 executions: 0.000041071704
+ time: 0.000105444022 for thread 5
 
----Reading 20 large files results---
+ time: 0.000091538008 for thread 6
 
-Total time for all threads in execution 1: 0.000287156989
-Total time for all threads in execution 2: 0.000150679989
-Total time for all threads in execution 3: 0.000340119004
-Total time for all threads in execution 4: 0.000148417021
-Total time for all threads in execution 5: 0.000630315975
-Total time for all threads in execution 6: 0.000156795024
-Total time for all threads in execution 7: 0.000139701006
-Total time for all threads in execution 8: 0.000143682002
-Total time for all threads in execution 9: 0.000191686995
-Total time for all threads in execution 10: 0.000148416992
-Average execution time over 10 executions: 0.000233697100
+ time: 0.000118845986 for thread 7
 
----Writing and reading 10 large each results---
+ time: 0.000107517000 for thread 8
 
-Total time for all threads in execution 1: 0.000582902983
-Total time for all threads in execution 2: 0.000352812000
-Total time for all threads in execution 3: 0.000714210997
-Total time for all threads in execution 4: 0.000450024992
-Total time for all threads in execution 5: 0.000379425997
-Total time for all threads in execution 6: 0.000759503018
-Total time for all threads in execution 7: 0.000180636998
-Total time for all threads in execution 8: 0.000824357005
-Total time for all threads in execution 9: 0.000609998999
-Total time for all threads in execution 10: 0.000867883005
-Average execution time over 10 executions: 0.000572175600
+ time: 0.000127807027 for thread 9
 
----Reading 10 small and writing 10 large results---
+ time: 0.000108976994 for thread 10
 
-Total time for all threads in execution 1: 0.001037141017
-Total time for all threads in execution 2: 0.001209687005
-Total time for all threads in execution 3: 0.000707822997
-Total time for all threads in execution 4: 0.000182610005
-Total time for all threads in execution 5: 0.000398926000
-Total time for all threads in execution 6: 0.000392485003
-Total time for all threads in execution 7: 0.002441272023
-Total time for all threads in execution 8: 0.000461112009
-Total time for all threads in execution 9: 0.000654571020
-Total time for all threads in execution 10: 0.001183991000
-Average execution time over 10 executions: 0.000866961808
+ time: 0.000073061994 for thread 11
 
----Writing 10 small and reading 10 large results---
+ time: 0.000070526003 for thread 12
 
-Total time for all threads in execution 1: 0.000104770996
-Total time for all threads in execution 2: 0.000755917019
-Total time for all threads in execution 3: 0.000185698998
-Total time for all threads in execution 4: 0.000171616004
-Total time for all threads in execution 5: 0.000124112994
-Total time for all threads in execution 6: 0.000532767997
-Total time for all threads in execution 7: 0.000213542982
-Total time for all threads in execution 8: 0.000091200985
-Total time for all threads in execution 9: 0.000776950998
-Total time for all threads in execution 10: 0.000115344010
-Average execution time over 10 executions: 0.000307192298
+ time: 0.000091141992 for thread 13
+
+ time: 0.000126953004 for thread 14
+
+ time: 0.000117839983 for thread 15
+
+ time: 0.000109091983 for thread 16
+
+ time: 0.000124248996 for thread 17
+
+ time: 0.000120504992 for thread 18
+
+ time: 0.000130218017 for thread 19
+
+ time: 0.000110355002 for thread 20
+
+Total time for all threads in execution 1: 0.000189612998
+ time: 0.001405390998 for thread 1
+
+ time: 0.001001743978 for thread 2
+
+ time: 0.000841347995 for thread 3
+
+ time: 0.000121902995 for thread 4
+
+ time: 0.000109452987 for thread 5
+
+ time: 0.001022194017 for thread 6
+
+ time: 0.000586673006 for thread 7
+
+ time: 0.000971148984 for thread 8
+
+ time: 0.000968893990 for thread 9
+
+ time: 0.000101391022 for thread 10
+
+ time: 0.000091781985 for thread 11
+
+ time: 0.000101616984 for thread 12
+
+ time: 0.000103511993 for thread 13
+
+ time: 0.000095884985 for thread 14
+
+ time: 0.000727244013 for thread 15
+
+ time: 0.000099241006 for thread 16
+
+ time: 0.000095961994 for thread 17
+
+ time: 0.000741538010 for thread 18
+
+ time: 0.000941892009 for thread 19
+
+ time: 0.000117610005 for thread 20
+
+Total time for all threads in execution 2: 0.001405390998
+ time: 0.000124273007 for thread 1
+
+ time: 0.000131892011 for thread 2
+
+ time: 0.000097074022 for thread 3
+
+ time: 0.000993133988 for thread 4
+
+ time: 0.000934767013 for thread 5
+
+ time: 0.000099134020 for thread 6
+
+ time: 0.000872281991 for thread 7
+
+ time: 0.000745517988 for thread 8
+
+ time: 0.000094969000 for thread 9
+
+ time: 0.000937473000 for thread 10
+
+ time: 0.000095533993 for thread 11
+
+ time: 0.000144824997 for thread 12
+
+ time: 0.000654911011 for thread 13
+
+ time: 0.000093646988 for thread 14
+
+ time: 0.000708481006 for thread 15
+
+ time: 0.000899575010 for thread 16
+
+ time: 0.001756568992 for thread 17
+
+ time: 0.000631967006 for thread 18
+
+ time: 0.000093822018 for thread 19
+
+ time: 0.000091950002 for thread 20
+
+Total time for all threads in execution 3: 0.001756568992
+ time: 0.000871060998 for thread 1
+
+ time: 0.000140199991 for thread 2
+
+ time: 0.000099250989 for thread 3
+
+ time: 0.000535989006 for thread 4
+
+ time: 0.000094497984 for thread 5
+
+ time: 0.000088843022 for thread 6
+
+ time: 0.000606026006 for thread 7
+
+ time: 0.000551221980 for thread 8
+
+ time: 0.000099972996 for thread 9
+
+ time: 0.000097554992 for thread 10
+
+ time: 0.000086578017 for thread 11
+
+ time: 0.000141450000 for thread 12
+
+ time: 0.000090789021 for thread 13
+
+ time: 0.001020330994 for thread 14
+
+ time: 0.000382182014 for thread 15
+
+ time: 0.000656746008 for thread 16
+
+ time: 0.001455509977 for thread 17
+
+ time: 0.000857397012 for thread 18
+
+ time: 0.000843360001 for thread 19
+
+ time: 0.000727040984 for thread 20
+
+Total time for all threads in execution 4: 0.001455509977
+ time: 0.000098879013 for thread 1
+
+ time: 0.000183743017 for thread 2
+
+ time: 0.000094747025 for thread 3
+
+ time: 0.000162262004 for thread 4
+
+ time: 0.000194802007 for thread 5
+
+ time: 0.000151372980 for thread 6
+
+ time: 0.000199798000 for thread 7
+
+ time: 0.000154048990 for thread 8
+
+ time: 0.000149143016 for thread 9
+
+ time: 0.000148419000 for thread 10
+
+ time: 0.000150842010 for thread 11
+
+ time: 0.000145817990 for thread 12
+
+ time: 0.000104014995 for thread 13
+
+ time: 0.000148771011 for thread 14
+
+ time: 0.000146942999 for thread 15
+
+ time: 0.000146918988 for thread 16
+
+ time: 0.000142997975 for thread 17
+
+ time: 0.000199503003 for thread 18
+
+ time: 0.000147514016 for thread 19
+
+ time: 0.000183728989 for thread 20
+
+Total time for all threads in execution 5: 0.000199798000
+ time: 0.000241614995 for thread 1
+
+ time: 0.000147173996 for thread 2
+
+ time: 0.000205886987 for thread 3
+
+ time: 0.000174079003 for thread 4
+
+ time: 0.000150653999 for thread 5
+
+ time: 0.000144079997 for thread 6
+
+ time: 0.000139792013 for thread 7
+
+ time: 0.000165941980 for thread 8
+
+ time: 0.000163422985 for thread 9
+
+ time: 0.001001355005 for thread 10
+
+ time: 0.000142553006 for thread 11
+
+ time: 0.000142298988 for thread 12
+
+ time: 0.000146767998 for thread 13
+
+ time: 0.000141282013 for thread 14
+
+ time: 0.000206804019 for thread 15
+
+ time: 0.000454660010 for thread 16
+
+ time: 0.000939240999 for thread 17
+
+ time: 0.000150874985 for thread 18
+
+ time: 0.000139683019 for thread 19
+
+ time: 0.000153961009 for thread 20
+
+Total time for all threads in execution 6: 0.001001355005
+ time: 0.000106313993 for thread 1
+
+ time: 0.000064543972 for thread 2
+
+ time: 0.000096258009 for thread 3
+
+ time: 0.000101776997 for thread 4
+
+ time: 0.000116226991 for thread 5
+
+ time: 0.000097724987 for thread 6
+
+ time: 0.000090899994 for thread 7
+
+ time: 0.000120284007 for thread 8
+
+ time: 0.000103323022 for thread 9
+
+ time: 0.000128802989 for thread 10
+
+ time: 0.000103483006 for thread 11
+
+ time: 0.000097111013 for thread 12
+
+ time: 0.000103547995 for thread 13
+
+ time: 0.000103450002 for thread 14
+
+ time: 0.000101978017 for thread 15
+
+ time: 0.000104467006 for thread 16
+
+ time: 0.000096595002 for thread 17
+
+ time: 0.000108728011 for thread 18
+
+ time: 0.000101729995 for thread 19
+
+ time: 0.000112348003 for thread 20
+
+Total time for all threads in execution 7: 0.000128802989
+ time: 0.000255280000 for thread 1
+
+ time: 0.000173742999 for thread 2
+
+ time: 0.001233249001 for thread 3
+
+ time: 0.000152777997 for thread 4
+
+ time: 0.000123790989 for thread 5
+
+ time: 0.001283012010 for thread 6
+
+ time: 0.000569513999 for thread 7
+
+ time: 0.000141074008 for thread 8
+
+ time: 0.001078276982 for thread 9
+
+ time: 0.000129678985 for thread 10
+
+ time: 0.000951291004 for thread 11
+
+ time: 0.000131820008 for thread 12
+
+ time: 0.000858888001 for thread 13
+
+ time: 0.000129605993 for thread 14
+
+ time: 0.000133328984 for thread 15
+
+ time: 0.000127640989 for thread 16
+
+ time: 0.000173099019 for thread 17
+
+ time: 0.000147019979 for thread 18
+
+ time: 0.000134288013 for thread 19
+
+ time: 0.000474788016 for thread 20
+
+Total time for all threads in execution 8: 0.001283012010
+ time: 0.000096369011 for thread 1
+
+ time: 0.000094169984 for thread 2
+
+ time: 0.000133279013 for thread 3
+
+ time: 0.000138005009 for thread 4
+
+ time: 0.000300946005 for thread 5
+
+ time: 0.000095452997 for thread 6
+
+ time: 0.000097980024 for thread 7
+
+ time: 0.000162870012 for thread 8
+
+ time: 0.000144421007 for thread 9
+
+ time: 0.000189746002 for thread 10
+
+ time: 0.000104376988 for thread 11
+
+ time: 0.000148166000 for thread 12
+
+ time: 0.000167509977 for thread 13
+
+ time: 0.000102919992 for thread 14
+
+ time: 0.000125177001 for thread 15
+
+ time: 0.000154687004 for thread 16
+
+ time: 0.000091087015 for thread 17
+
+ time: 0.001856069022 for thread 18
+
+ time: 0.000149247993 for thread 19
+
+ time: 0.000095110008 for thread 20
+
+Total time for all threads in execution 9: 0.001856069022
+ time: 0.000235790008 for thread 1
+
+ time: 0.000188278005 for thread 2
+
+ time: 0.000251379010 for thread 3
+
+ time: 0.000098299992 for thread 4
+
+ time: 0.000105233979 for thread 5
+
+ time: 0.000092271977 for thread 6
+
+ time: 0.000113210990 for thread 7
+
+ time: 0.000101066020 for thread 8
+
+ time: 0.000102496997 for thread 9
+
+ time: 0.000099661993 for thread 10
+
+ time: 0.000106853986 for thread 11
+
+ time: 0.000108945998 for thread 12
+
+ time: 0.000110349996 for thread 13
+
+ time: 0.000608064991 for thread 14
+
+ time: 0.000142896984 for thread 15
+
+ time: 0.000095964002 for thread 16
+
+ time: 0.000105282001 for thread 17
+
+ time: 0.000201988005 for thread 18
+
+ time: 0.000383442006 for thread 19
+
+ time: 0.000115892995 for thread 20
+
+Total time for all threads in execution 10: 0.000608064991
+Average execution time over 10 executions: 0.000988418498
 
 ---Writing, reading 5 small each and writing, reading 5 large each results---
 
-Total time for all threads in execution 1: 0.000166562997
-Total time for all threads in execution 2: 0.000346756016
-Total time for all threads in execution 3: 0.000180150004
-Total time for all threads in execution 4: 0.000650256989
-Total time for all threads in execution 5: 0.000208896992
-Total time for all threads in execution 6: 0.000148927007
-Total time for all threads in execution 7: 0.000152680004
-Total time for all threads in execution 8: 0.000206285011
-Total time for all threads in execution 9: 0.000125237013
-Total time for all threads in execution 10: 0.001203800988
-Average execution time over 10 executions: 0.000338955302
+ time: 0.000003557012 for thread 1
+
+ time: 0.000911883981 for thread 2
+
+ time: 0.000016372011 for thread 3
+
+ time: 0.000004139991 for thread 4
+
+ time: 0.000009978976 for thread 5
+
+ time: 0.000019761006 for thread 6
+
+ time: 0.000009579991 for thread 7
+
+ time: 0.000013057987 for thread 8
+
+ time: 0.000018430990 for thread 9
+
+ time: 0.000021127984 for thread 10
+
+ time: 0.000807592995 for thread 11
+
+ time: 0.001180154009 for thread 12
+
+ time: 0.000900208019 for thread 13
+
+ time: 0.001535324001 for thread 14
+
+ time: 0.000799817004 for thread 15
+
+ time: 0.000186841993 for thread 16
+
+ time: 0.000173278997 for thread 17
+
+ time: 0.001108964992 for thread 18
+
+ time: 0.000170232001 for thread 19
+
+ time: 0.000173658016 for thread 20
+
+Total time for all threads in execution 1: 0.001535324001
+ time: 0.000005867012 for thread 1
+
+ time: 0.000006497983 for thread 2
+
+ time: 0.000004708010 for thread 3
+
+ time: 0.000005651003 for thread 4
+
+ time: 0.000006774993 for thread 5
+
+ time: 0.000022166991 for thread 6
+
+ time: 0.000008972012 for thread 7
+
+ time: 0.000018346997 for thread 8
+
+ time: 0.000010774005 for thread 9
+
+ time: 0.000012133998 for thread 10
+
+ time: 0.000295551989 for thread 11
+
+ time: 0.000317205006 for thread 12
+
+ time: 0.000263429974 for thread 13
+
+ time: 0.000278958993 for thread 14
+
+ time: 0.000233621016 for thread 15
+
+ time: 0.000207022997 for thread 16
+
+ time: 0.000263572001 for thread 17
+
+ time: 0.000257545005 for thread 18
+
+ time: 0.000297810999 for thread 19
+
+ time: 0.000272723002 for thread 20
+
+Total time for all threads in execution 2: 0.000317205006
+ time: 0.000004196976 for thread 1
+
+ time: 0.000003296998 for thread 2
+
+ time: 0.000002921995 for thread 3
+
+ time: 0.000010657008 for thread 4
+
+ time: 0.000002195011 for thread 5
+
+ time: 0.000017310027 for thread 6
+
+ time: 0.000010932999 for thread 7
+
+ time: 0.000007883995 for thread 8
+
+ time: 0.000009078009 for thread 9
+
+ time: 0.000007352995 for thread 10
+
+ time: 0.000101502985 for thread 11
+
+ time: 0.000604294997 for thread 12
+
+ time: 0.000130643981 for thread 13
+
+ time: 0.000151004991 for thread 14
+
+ time: 0.000138021976 for thread 15
+
+ time: 0.000158127019 for thread 16
+
+ time: 0.000141185010 for thread 17
+
+ time: 0.000166834012 for thread 18
+
+ time: 0.000137250987 for thread 19
+
+ time: 0.000081323989 for thread 20
+
+Total time for all threads in execution 3: 0.000604294997
+ time: 0.000004500995 for thread 1
+
+ time: 0.000006417016 for thread 2
+
+ time: 0.000004547997 for thread 3
+
+ time: 0.000005509995 for thread 4
+
+ time: 0.000007066992 for thread 5
+
+ time: 0.000017331011 for thread 6
+
+ time: 0.000019041996 for thread 7
+
+ time: 0.000008307979 for thread 8
+
+ time: 0.000013785990 for thread 9
+
+ time: 0.000010088988 for thread 10
+
+ time: 0.000158551993 for thread 11
+
+ time: 0.000225469004 for thread 12
+
+ time: 0.000134531991 for thread 13
+
+ time: 0.000235796004 for thread 14
+
+ time: 0.000235004991 for thread 15
+
+ time: 0.001197531004 for thread 16
+
+ time: 0.000963316008 for thread 17
+
+ time: 0.000250070007 for thread 18
+
+ time: 0.000237789995 for thread 19
+
+ time: 0.000225402997 for thread 20
+
+Total time for all threads in execution 4: 0.001197531004
+ time: 0.000002849003 for thread 1
+
+ time: 0.000002563000 for thread 2
+
+ time: 0.000005409995 for thread 3
+
+ time: 0.000002485001 for thread 4
+
+ time: 0.000002804009 for thread 5
+
+ time: 0.000018555002 for thread 6
+
+ time: 0.000016385980 for thread 7
+
+ time: 0.000015080004 for thread 8
+
+ time: 0.000011488999 for thread 9
+
+ time: 0.000010197982 for thread 10
+
+ time: 0.000125457009 for thread 11
+
+ time: 0.000110811990 for thread 12
+
+ time: 0.000070237002 for thread 13
+
+ time: 0.000101121026 for thread 14
+
+ time: 0.000156686991 for thread 15
+
+ time: 0.000084329979 for thread 16
+
+ time: 0.000093142997 for thread 17
+
+ time: 0.000105793995 for thread 18
+
+ time: 0.000099509984 for thread 19
+
+ time: 0.000069474976 for thread 20
+
+Total time for all threads in execution 5: 0.000156686991
+ time: 0.000003305002 for thread 1
+
+ time: 0.000012661010 for thread 2
+
+ time: 0.000002286019 for thread 3
+
+ time: 0.000002565997 for thread 4
+
+ time: 0.000012807985 for thread 5
+
+ time: 0.000022043008 for thread 6
+
+ time: 0.000005122012 for thread 7
+
+ time: 0.000005579990 for thread 8
+
+ time: 0.000005808019 for thread 9
+
+ time: 0.000012767006 for thread 10
+
+ time: 0.000231729995 for thread 11
+
+ time: 0.000184021977 for thread 12
+
+ time: 0.000103416009 for thread 13
+
+ time: 0.000109315995 for thread 14
+
+ time: 0.000270199002 for thread 15
+
+ time: 0.000216546003 for thread 16
+
+ time: 0.000095375988 for thread 17
+
+ time: 0.000063773012 for thread 18
+
+ time: 0.000066239008 for thread 19
+
+ time: 0.000081114005 for thread 20
+
+Total time for all threads in execution 6: 0.000270199002
+ time: 0.000005667011 for thread 1
+
+ time: 0.000005337992 for thread 2
+
+ time: 0.000005406007 for thread 3
+
+ time: 0.000005340000 for thread 4
+
+ time: 0.000005100010 for thread 5
+
+ time: 0.000020590000 for thread 6
+
+ time: 0.000016987993 for thread 7
+
+ time: 0.000012820994 for thread 8
+
+ time: 0.000009609998 for thread 9
+
+ time: 0.000010763993 for thread 10
+
+ time: 0.000219706009 for thread 11
+
+ time: 0.000266588002 for thread 12
+
+ time: 0.000235139014 for thread 13
+
+ time: 0.000219046982 for thread 14
+
+ time: 0.000224717980 for thread 15
+
+ time: 0.000461480988 for thread 16
+
+ time: 0.000230876001 for thread 17
+
+ time: 0.000290122000 for thread 18
+
+ time: 0.000251324003 for thread 19
+
+ time: 0.000225755008 for thread 20
+
+Total time for all threads in execution 7: 0.000461480988
+ time: 0.000003497000 for thread 1
+
+ time: 0.000004967005 for thread 2
+
+ time: 0.000002977002 for thread 3
+
+ time: 0.000002574001 for thread 4
+
+ time: 0.000005098991 for thread 5
+
+ time: 0.000005697977 for thread 6
+
+ time: 0.000006577000 for thread 7
+
+ time: 0.000015956000 for thread 8
+
+ time: 0.000004656002 for thread 9
+
+ time: 0.000006216986 for thread 10
+
+ time: 0.000139059004 for thread 11
+
+ time: 0.000189950020 for thread 12
+
+ time: 0.000128268002 for thread 13
+
+ time: 0.000142301025 for thread 14
+
+ time: 0.000195461995 for thread 15
+
+ time: 0.000101266021 for thread 16
+
+ time: 0.000137572002 for thread 17
+
+ time: 0.000139001990 for thread 18
+
+ time: 0.000130177010 for thread 19
+
+ time: 0.000233211002 for thread 20
+
+Total time for all threads in execution 8: 0.000233211002
+ time: 0.000003601977 for thread 1
+
+ time: 0.000003723020 for thread 2
+
+ time: 0.000003699010 for thread 3
+
+ time: 0.000002887013 for thread 4
+
+ time: 0.000003844005 for thread 5
+
+ time: 0.000004436006 for thread 6
+
+ time: 0.000006568007 for thread 7
+
+ time: 0.000006279006 for thread 8
+
+ time: 0.000004722999 for thread 9
+
+ time: 0.000014577003 for thread 10
+
+ time: 0.000108315988 for thread 11
+
+ time: 0.000111995003 for thread 12
+
+ time: 0.000102413993 for thread 13
+
+ time: 0.000110116001 for thread 14
+
+ time: 0.000113051006 for thread 15
+
+ time: 0.000132143003 for thread 16
+
+ time: 0.000096849981 for thread 17
+
+ time: 0.000097044976 for thread 18
+
+ time: 0.000496808003 for thread 19
+
+ time: 0.000125784980 for thread 20
+
+Total time for all threads in execution 9: 0.000496808003
+ time: 0.000005956012 for thread 1
+
+ time: 0.000007221010 for thread 2
+
+ time: 0.000007319002 for thread 3
+
+ time: 0.000009083014 for thread 4
+
+ time: 0.000006726012 for thread 5
+
+ time: 0.000029177987 for thread 6
+
+ time: 0.000032206997 for thread 7
+
+ time: 0.000015127996 for thread 8
+
+ time: 0.000016250997 for thread 9
+
+ time: 0.000015507016 for thread 10
+
+ time: 0.001236771990 for thread 11
+
+ time: 0.000322912994 for thread 12
+
+ time: 0.000314646022 for thread 13
+
+ time: 0.000371416012 for thread 14
+
+ time: 0.000315540994 for thread 15
+
+ time: 0.000321455998 for thread 16
+
+ time: 0.000329725008 for thread 17
+
+ time: 0.000312841003 for thread 18
+
+ time: 0.000325789995 for thread 19
+
+ time: 0.000330674986 for thread 20
+
+Total time for all threads in execution 10: 0.001236771990
+Average execution time over 10 executions: 0.000650951298

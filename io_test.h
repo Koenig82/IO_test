@@ -39,6 +39,7 @@ typedef struct {
     threadArg* shared;
 } threadContext;
 
+void print_usage(void);
 void create_data(threadArg *arg);
 double TimeSpecToSeconds(struct timespec* ts);
 void collect_results(threadArg *arg, FILE *log);

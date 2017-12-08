@@ -4,7 +4,8 @@
 #define READ_SMALL 2
 #define READ_LARGE 3
 
-#define NUMBER_OF_THREADS 20
+#define NUMBER_OF_THREADS 1
+#define AVERAGE_COUNT 1
 
 #define TEST_SIZE_SMALL 1000
 #define TEST_SIZE_LARGE 100000
@@ -26,20 +27,21 @@ typedef struct threadArg{
     char* small_data;
     char* large_data;
     pthread_barrier_t* barrier;
-    double* times;
+    double* times[NUMBER_OF_THREADS];
     FILE* fp[NUMBER_OF_THREADS];
 }threadArg;
 
 //struct containing the threadlocal information
 typedef struct {
-    int id;
-    int operation;
+    int* id;
+    int* loop_index;
+    int* operation;
     threadArg* shared;
 } threadContext;
 
 void create_data(threadArg *arg);
 double TimeSpecToSeconds(struct timespec* ts);
-void join_and_present_result(pthread_t *threads, threadContext* arg, FILE* log);
+void collect_results(threadArg *arg, FILE *log);
 
 void* work(void* args);
 

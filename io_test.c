@@ -25,12 +25,14 @@ char *file_names[20] = {"thread01",
 
 int main(int argc, char* argv[]) {
 
-    char* ptr;
-    long argument = strtol(argv[1], &ptr, 10);
-    if(argc != 2){
+
+    if(argc != 2) {
         print_usage();
         exit(EXIT_FAILURE);
-    }else if(argument < 1 || argument > 7){
+    }
+    char* ptr;
+    long argument = strtol(argv[1], &ptr, 10);
+    if(argument < 1 || argument > 7){
         print_usage();
         exit(EXIT_FAILURE);
     }

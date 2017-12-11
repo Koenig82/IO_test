@@ -7,8 +7,8 @@
 #define NUMBER_OF_THREADS 20
 #define AVERAGE_COUNT 10
 
-#define TEST_SIZE_SMALL 1000
-#define TEST_SIZE_LARGE 100000
+#define TEST_SIZE_SMALL 100
+#define TEST_SIZE_LARGE 1000000
 
 #include <stdio.h>
 #include <sys/types.h>

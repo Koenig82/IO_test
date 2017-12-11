@@ -12,7 +12,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb000434-6c0f-4d20-b0a9-76064cb09d82" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/read_write_time.dir/io_test.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/read_write_time.dir/io_test.c.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/read_write_time" afterPath="$PROJECT_DIR$/cmake-build-debug/read_write_time" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/Log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread01Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread01Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread01Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread01Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread02Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread02Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread02Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread02Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread03Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread03Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread03Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread03Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread04Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread04Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread04Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread04Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread05Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread05Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread05Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread05Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread06Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread06Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread06Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread06Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread07Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread07Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread07Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread07Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread08Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread08Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread08Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread08Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread09Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread09Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread09Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread09Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread10Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread10Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread10Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread10Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread11Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread11Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread11Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread11Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread12Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread12Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread12Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread12Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread13Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread13Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread13Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread13Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread14Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread14Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread14Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread14Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread15Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread15Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread15Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread15Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread16Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread16Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread16Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread16Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread17Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread17Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread17Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread17Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread18Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread18Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread18Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread18Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread19Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread19Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread19Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread19Small.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread20Large.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread20Large.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/thread20Small.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/thread20Small.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.c" afterPath="$PROJECT_DIR$/io_test.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/io_test.h" afterPath="$PROJECT_DIR$/io_test.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,11 +79,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="io_test.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/io_test.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="-198">
+              <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding>
                 <element signature="e#215#233#0" expanded="true" />
               </folding>
@@ -46,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="io_test.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/io_test.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="609" column="12" lean-forward="false" selection-start-line="609" selection-start-column="12" selection-end-line="609" selection-end-column="12" />
+            <state relative-caret-position="252">
+              <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -130,7 +175,7 @@
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
-    <configuration name="read_write_time" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="7" PASS_PARENT_ENVS_2="true" PROJECT_NAME="read_write_time" TARGET_NAME="read_write_time" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="read_write_time" RUN_TARGET_NAME="read_write_time">
+    <configuration name="read_write_time" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="read_write_time" TARGET_NAME="read_write_time" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="read_write_time" RUN_TARGET_NAME="read_write_time">
       <envs />
     </configuration>
     <list size="2">
@@ -149,12 +194,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512515204319</updated>
       <workItem from="1512515206156" duration="3505000" />
-      <workItem from="1512589841457" duration="46524000" />
+      <workItem from="1512589841457" duration="48091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50029000" />
+    <option name="totallyTimeSpent" value="51596000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="-4" width="1303" height="780" extended-state="6" />
@@ -231,21 +276,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/io_test.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="609" column="12" lean-forward="false" selection-start-line="609" selection-start-column="12" selection-end-line="609" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/io_test.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="-198">
+          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
             <element signature="e#215#233#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/io_test.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -42,7 +42,7 @@ typedef struct {
 void print_usage(void);
 void create_data(threadArg *arg);
 double TimeSpecToSeconds(struct timespec* ts);
-void collect_results(threadArg *arg, FILE *log);
+void collect_results(threadArg *arg, FILE *tDist, FILE *totals, FILE *totAvg);
 
 void* work(void* args);
 

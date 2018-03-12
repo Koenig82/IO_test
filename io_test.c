@@ -39,8 +39,12 @@ int main(int argc, char* argv[]) {
 
     int thread_index;
     int execution_index;
-    fclose(fopen("Log.txt", "w"));
-    FILE* log = fopen("Log.txt", "a");
+    fclose(fopen("ThreadDist.txt", "w"));
+    FILE* tDist = fopen("ThreadDist.txt", "a");
+    fclose(fopen("Totals.txt", "w"));
+    FILE* totals = fopen("Totals.txt", "a");
+    fclose(fopen("TotAvg.txt", "w"));
+    FILE* totAvg = fopen("TotAvg.txt", "a");
 
     //initialize shared threadarguments
     pthread_barrier_t threadBarrier;
@@ -85,9 +89,9 @@ int main(int argc, char* argv[]) {
             }
         }
     }
-    fprintf(log, "\n---Writing %d small files results---\n",
+    fprintf(tDist, "\n---Writing %d small files results---\n",
             NUMBER_OF_THREADS);
-    collect_results(arg, log);
+    collect_results(arg, tDist, totals, totAvg);
 
     //Write 'nrofthreads' large files
     for(execution_index = 0;
@@ -112,9 +116,9 @@ int main(int argc, char* argv[]) {
             }
         }
     }
-    fprintf(log, "\n\n---Writing %d large files results---\n",
+    fprintf(tDist, "\n\n---Writing %d large files results---\n",
             NUMBER_OF_THREADS);
-    collect_results(arg, log);
+    collect_results(arg, tDist, totals, totAvg);
 
     switch(argument) {
 
@@ -141,9 +145,9 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log, "\n\n---Reading %d small files results---\n",
+            fprintf(tDist, "\n\n---Reading %d small files results---\n",
                 NUMBER_OF_THREADS);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
 
         case 2:
@@ -168,9 +172,9 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log, "\n\n---Reading %d large files results---\n",
+            fprintf(tDist, "\n\n---Reading %d large files results---\n",
                 NUMBER_OF_THREADS);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
 
         case 3 :
@@ -199,9 +203,9 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log, "\n\n---Writing %d small, %d large files results---\n",
+            fprintf(tDist, "\n\n---Writing %d small, %d large files results---\n",
                     NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
 
         case 4:
@@ -232,10 +236,10 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log,
+            fprintf(tDist,
                     "\n\n---Writing and reading %d large each results---\n",
                     NUMBER_OF_THREADS / 2);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
 
         case 5 :
@@ -264,10 +268,10 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log,
+            fprintf(tDist,
                     "\n\n---Reading %d small and writing %d large results---\n",
                     NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
         case 6 :
             //Write small and read large 'nrofthreads'/2 each
@@ -295,10 +299,10 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log,
+            fprintf(tDist,
                     "\n\n---Writing %d small and reading %d large results---\n",
                     NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
 
         case 7 :
@@ -331,11 +335,11 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(log, "\n\n---Writing, reading %d small each and " ,
+            fprintf(tDist, "\n\n---Writing, reading %d small each and " ,
                     NUMBER_OF_THREADS / 4);
-            fprintf(log, "writing, reading %d large each results---\n",
+            fprintf(tDist, "writing, reading %d large each results---\n",
                     NUMBER_OF_THREADS / 4);
-            collect_results(arg, log);
+            collect_results(arg, tDist, totals, totAvg);
             break;
 
         default :
@@ -357,7 +361,9 @@ int main(int argc, char* argv[]) {
     }
     free(arg);
     free(threads);
-    fclose(log);
+    fclose(tDist);
+    fclose(totals);
+    fclose(totAvg);
 }
 void print_usage(void){
     printf("\nprogram [int]\n");
@@ -400,7 +406,7 @@ double TimeSpecToSeconds(struct timespec* ts) {
     return (double)ts->tv_sec + (double)ts->tv_nsec / 1000000000.0;
 }
 
-void collect_results(threadArg *arg, FILE *log) {
+void collect_results(threadArg *arg, FILE *tDist, FILE *totals, FILE *totAvg) {
 
     int index_thread = 0;
     int index_average_count = 0;
@@ -418,10 +424,9 @@ void collect_results(threadArg *arg, FILE *log) {
         index_average_count++){
 
         for(index_thread = 0; index_thread < NUMBER_OF_THREADS; index_thread++){
-
-            fprintf(log ,"\n time: %.12lf for thread %d",
-                    arg->times[index_average_count][index_thread],
-                    index_thread+1);
+            //time for thread "index_thread+1"
+            fprintf(tDist ,"%.12lf\t",
+                    arg->times[index_average_count][index_thread]);
             thread_average += arg->times[index_average_count][index_thread];
             if(arg->times[index_average_count][index_thread] >
                     total_execution_time){
@@ -429,25 +434,26 @@ void collect_results(threadArg *arg, FILE *log) {
                         arg->times[index_average_count][index_thread];
             }
         }
+        fprintf(tDist ,"\n");
         execution_times[index_average_count] = total_execution_time;
 
         /*The lines below can add information about the total time for
          * individual executions, and an average workload distribution between
          * that execution's threads.*/
-        fprintf(log, "\nTotal time for all threads in execution %d: %.12lf\n",
-                index_average_count+1, total_execution_time);
-        /*fprintf(log, "\nAverage thread work time in execution %d: %.12lf\n",
+        //Total time including all threads in execution "index_average_count+1"
+        fprintf(totals, "%.12lf\t", total_execution_time);
+        /*fprintf(xxx, "\nAverage thread work time in execution %d: %.12lf\n",
                 index_average_count+1, thread_average/NUMBER_OF_THREADS);*/
         total_execution_time = 0;
     }
-
+    fprintf(totals, "\n");
     for(index_average_count = 0; index_average_count < AVERAGE_COUNT;
         index_average_count++){
         average_execution_time += execution_times[index_average_count];
     }
     total_execution_time = average_execution_time/AVERAGE_COUNT;
-    fprintf(log,"\nAverage execution time over %d executions: %.12lf",
-            AVERAGE_COUNT, total_execution_time);
+    //average execution time over "AVERAGE_COUNT" executions
+    fprintf(totAvg,"%.12lf\t", total_execution_time);
 
 }
 

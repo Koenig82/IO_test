@@ -1,1 +1,0 @@
-/usr/bin/cc -pthread -g   CMakeFiles/read_write_time.dir/io_test.c.o  -o read_write_time 

@@ -1,3 +1,0 @@
-/home/knig/programmering/clion/io_test/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/knig/programmering/clion/io_test/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/knig/programmering/clion/io_test/cmake-build-debug/CMakeFiles/read_write_time.dir

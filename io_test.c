@@ -39,12 +39,16 @@ int main(int argc, char* argv[]) {
 
     int thread_index;
     int execution_index;
-    fclose(fopen("ThreadDist.txt", "w"));
-    FILE* tDist = fopen("ThreadDist.txt", "a");
-    fclose(fopen("Totals.txt", "w"));
-    FILE* totals = fopen("Totals.txt", "a");
-    fclose(fopen("TotAvg.txt", "w"));
-    FILE* totAvg = fopen("TotAvg.txt", "a");
+    fclose(fopen("tDistSmall.txt", "w"));
+    FILE* tDistSmall = fopen("tDistSmall.txt", "a");
+    fclose(fopen("tDistLarge.txt", "w"));
+    FILE* tDistLarge = fopen("tDistLarge.txt", "a");
+    fclose(fopen("tDistCustom.txt", "w"));
+    FILE* tDistCust = fopen("tDistCustom.txt", "a");
+    fclose(fopen("totals.txt", "w"));
+    FILE* totals = fopen("totals.txt", "a");
+    fclose(fopen("totAvg.txt", "w"));
+    FILE* totAvg = fopen("totAvg.txt", "a");
 
     //initialize shared threadarguments
     pthread_barrier_t threadBarrier;
@@ -89,9 +93,9 @@ int main(int argc, char* argv[]) {
             }
         }
     }
-    fprintf(tDist, "\n---Writing %d small files results---\n",
-            NUMBER_OF_THREADS);
-    collect_results(arg, tDist, totals, totAvg);
+    /*fprintf(tDistSmall, "\n---Writing %d small files results---\n",
+            NUMBER_OF_THREADS);*/
+    collect_results(arg, tDistSmall, totals, totAvg);
 
     //Write 'nrofthreads' large files
     for(execution_index = 0;
@@ -116,9 +120,9 @@ int main(int argc, char* argv[]) {
             }
         }
     }
-    fprintf(tDist, "\n\n---Writing %d large files results---\n",
-            NUMBER_OF_THREADS);
-    collect_results(arg, tDist, totals, totAvg);
+    /*fprintf(tDistLarge, "\n\n---Writing %d large files results---\n",
+            NUMBER_OF_THREADS);*/
+    collect_results(arg, tDistLarge, totals, totAvg);
 
     switch(argument) {
 
@@ -145,9 +149,9 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist, "\n\n---Reading %d small files results---\n",
-                NUMBER_OF_THREADS);
-            collect_results(arg, tDist, totals, totAvg);
+            /*fprintf(tDistSmall, "\n\n---Reading %d small files results---\n",
+                NUMBER_OF_THREADS);*/
+            collect_results(arg, tDistSmall, totals, totAvg);
             break;
 
         case 2:
@@ -172,9 +176,9 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist, "\n\n---Reading %d large files results---\n",
-                NUMBER_OF_THREADS);
-            collect_results(arg, tDist, totals, totAvg);
+            /*fprintf(tDistLarge, "\n\n---Reading %d large files results---\n",
+                NUMBER_OF_THREADS);*/
+            collect_results(arg, tDistLarge, totals, totAvg);
             break;
 
         case 3 :
@@ -203,9 +207,9 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist, "\n\n---Writing %d small, %d large files results---\n",
-                    NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
-            collect_results(arg, tDist, totals, totAvg);
+            /*fprintf(tDistCust, "\n\n---Writing %d small, %d large files results---\n",
+                    NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);*/
+            collect_results(arg, tDistCust, totals, totAvg);
             break;
 
         case 4:
@@ -236,10 +240,10 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist,
+            /*fprintf(tDistCust,
                     "\n\n---Writing and reading %d large each results---\n",
-                    NUMBER_OF_THREADS / 2);
-            collect_results(arg, tDist, totals, totAvg);
+                    NUMBER_OF_THREADS / 2);*/
+            collect_results(arg, tDistCust, totals, totAvg);
             break;
 
         case 5 :
@@ -268,10 +272,10 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist,
+            /*fprintf(tDistCust,
                     "\n\n---Reading %d small and writing %d large results---\n",
-                    NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
-            collect_results(arg, tDist, totals, totAvg);
+                    NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);*/
+            collect_results(arg, tDistCust, totals, totAvg);
             break;
         case 6 :
             //Write small and read large 'nrofthreads'/2 each
@@ -299,10 +303,10 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist,
+            /*fprintf(tDistCust,
                     "\n\n---Writing %d small and reading %d large results---\n",
-                    NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);
-            collect_results(arg, tDist, totals, totAvg);
+                    NUMBER_OF_THREADS / 2, NUMBER_OF_THREADS / 2);*/
+            collect_results(arg, tDistCust, totals, totAvg);
             break;
 
         case 7 :
@@ -335,11 +339,11 @@ int main(int argc, char* argv[]) {
                     }
                 }
             }
-            fprintf(tDist, "\n\n---Writing, reading %d small each and " ,
+            /*fprintf(tDistCust, "\n\n---Writing, reading %d small each and " ,
                     NUMBER_OF_THREADS / 4);
-            fprintf(tDist, "writing, reading %d large each results---\n",
-                    NUMBER_OF_THREADS / 4);
-            collect_results(arg, tDist, totals, totAvg);
+            fprintf(tDistCust, "writing, reading %d large each results---\n",
+                    NUMBER_OF_THREADS / 4);*/
+            collect_results(arg, tDistCust, totals, totAvg);
             break;
 
         default :
@@ -361,7 +365,9 @@ int main(int argc, char* argv[]) {
     }
     free(arg);
     free(threads);
-    fclose(tDist);
+    fclose(tDistSmall);
+    fclose(tDistLarge);
+    fclose(tDistCust);
     fclose(totals);
     fclose(totAvg);
 }
